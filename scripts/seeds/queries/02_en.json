@@ -1,0 +1,6 @@
+[
+  {"q": "cat:eess.SP AND (DFT OR FFT) AND (algorithm OR review OR tutorial OR leakage OR window)", "subtopic": "DFT-FFT"},
+  {"q": "cat:eess.SP AND (FIR OR IIR) AND (\"filter design\" OR Butterworth OR Chebyshev OR equiripple)", "subtopic": "filter design"},
+  {"q": "cat:eess.SP AND (multirate OR decimation OR interpolation OR \"sample rate conversion\" OR polyphase)", "subtopic": "multirate"},
+  {"q": "cat:eess.SP AND (quantization OR \"fixed-point\" OR \"finite precision\") AND (filter OR FFT OR DSP)", "subtopic": "quantization"}
+]

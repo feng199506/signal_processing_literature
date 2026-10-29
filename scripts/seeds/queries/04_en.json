@@ -1,0 +1,6 @@
+[
+  {"q": "cat:eess.SP AND (STFT OR \"short-time Fourier\" OR spectrogram) AND (window OR reassignment OR inversion)", "subtopic": "STFT"},
+  {"q": "cat:eess.SP AND (wavelet OR synchrosqueez OR \"multi-resolution\" OR \"multiresolution\") AND (decomposition OR transform)", "subtopic": "wavelet"},
+  {"q": "(\"time-frequency\") AND (ti:review OR ti:survey OR ti:tutorial OR nonstationary OR transient)", "subtopic": "TF survey"},
+  {"q": "cat:eess.SP AND (scattering OR \"constant-Q\" OR CQT OR \"Wigner-Ville\")", "subtopic": "other TF"}
+]

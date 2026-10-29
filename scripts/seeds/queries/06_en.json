@@ -1,0 +1,6 @@
+[
+  {"q": "cat:eess.SP AND (\"compressed sensing\" OR \"compressive sensing\" OR \"sparse reconstruction\")", "subtopic": "CS"},
+  {"q": "cat:eess.SP AND (deconvolution OR deblurring OR denoising) AND (regularization OR sparse OR inverse)", "subtopic": "deconv"},
+  {"q": "(\"algorithm unrolling\" OR \"deep unfolding\" OR \"learned ISTA\" OR LISTA) AND (signal OR image OR inverse)", "subtopic": "unrolling"},
+  {"q": "(ti:survey OR ti:review OR ti:tutorial) AND (\"inverse problem\" OR \"compressed sensing\" OR \"sparse representation\") AND (signal OR reconstruction)", "subtopic": "survey"}
+]

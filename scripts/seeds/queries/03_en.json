@@ -1,0 +1,6 @@
+[
+  {"q": "cat:eess.SP AND (\"power spectral\" OR \"spectrum estimation\" OR periodogram OR multitaper OR \"spectral density\")", "subtopic": "PSD"},
+  {"q": "cat:eess.SP AND (\"signal detection\" OR \"hypothesis testing\" OR \"Neyman-Pearson\" OR CFAR)", "subtopic": "detection"},
+  {"q": "cat:eess.SP AND (\"parameter estimation\" OR \"Cramer-Rao\" OR \"maximum likelihood\") AND (frequency OR amplitude OR delay)", "subtopic": "estimation"},
+  {"q": "(ti:survey OR ti:review OR ti:tutorial) AND (\"statistical signal processing\" OR \"spectrum estimation\" OR \"signal detection\")", "subtopic": "survey"}
+]

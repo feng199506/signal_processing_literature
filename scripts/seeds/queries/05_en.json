@@ -1,0 +1,6 @@
+[
+  {"q": "cat:eess.SP AND (\"adaptive filter\" OR LMS OR RLS OR \"Wiener filter\")", "subtopic": "adaptive"},
+  {"q": "(Kalman OR \"unscented\" OR \"extended Kalman\" OR \"particle filter\") AND (ti:filter OR ti:smoothing OR ti:tutorial OR ti:review)", "subtopic": "Kalman-PF"},
+  {"q": "cat:eess.SP AND (\"system identification\") AND (adaptive OR recursive OR Kalman)", "subtopic": "sysid"},
+  {"q": "(ti:KalmanNet OR \"neural Kalman\" OR \"learned Kalman\" OR \"differentiable particle\")", "subtopic": "learned filters"}
+]

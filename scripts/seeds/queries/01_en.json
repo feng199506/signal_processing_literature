@@ -1,0 +1,6 @@
+[
+  {"q": "cat:eess.SP AND (\"sampling theorem\" OR Nyquist OR aliasing) AND (reconstruction OR interpolation OR bandlimited)", "subtopic": "sampling"},
+  {"q": "ti:sampling AND (signal OR bandlimited OR analog) AND (reconstruction OR theorem OR aliasing)", "subtopic": "sampling"},
+  {"q": "cat:eess.SP AND (convolution OR \"linear time-invariant\" OR LTI) AND (\"frequency response\" OR Fourier OR Laplace)", "subtopic": "LTI"},
+  {"q": "(ti:survey OR ti:review OR ti:tutorial) AND (\"signals and systems\" OR \"sampling theory\" OR \"linear time-invariant\")", "subtopic": "survey"}
+]

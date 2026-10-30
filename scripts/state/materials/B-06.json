@@ -1,0 +1,15 @@
+{
+ "status": "verified",
+ "set": "books",
+ "title": "Lecture Notes for EE 261: The Fourier Transform and its Applications",
+ "files": [
+  {
+   "path": "books/Osgood_FourierTransformApplications_EE261_en.pdf",
+   "url": "https://see.stanford.edu/materials/lsoftaee261/book-fall-07.pdf",
+   "pages": 428,
+   "sha256": "93579ff2ac4082a38240db3eef7dbd6f3354e58db720ad052692b5b6179c5be1",
+   "bytes": 31520130
+  }
+ ],
+ "note": "HTTP 200；%PDF；pypdf 可解析 428 页；名称短语已见"
+}

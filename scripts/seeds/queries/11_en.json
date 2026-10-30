@@ -1,0 +1,6 @@
+[
+  {"q": "(\"algorithm unrolling\" OR \"deep unfolding\" OR \"learned iterative\") AND (signal OR image OR inverse OR filter)", "subtopic": "unrolling"},
+  {"q": "(\"physics-informed\" OR \"physics based\" OR \"model-based deep\") AND (\"signal processing\" OR filtering OR reconstruction)", "subtopic": "physics"},
+  {"q": "(\"self-supervised\") AND (signal OR audio OR EEG OR vibration) AND (representation OR reconstruction)", "subtopic": "ssl"},
+  {"q": "(ti:survey OR ti:review) AND (\"deep learning\" AND \"signal processing\") AND (unrolling OR physics OR filter)", "subtopic": "survey"}
+]

@@ -1,0 +1,6 @@
+[
+  {"q": "(vibration OR \"bearing fault\" OR \"condition monitoring\" OR \"motor current\") AND (\"signal processing\" OR wavelet OR envelope OR spectrum)", "subtopic": "industrial"},
+  {"q": "(ECG OR EEG OR EMG OR PPG) AND (\"signal processing\" OR filter OR artifact OR QRS) AND (ti:review OR ti:survey OR detection OR denoising)", "subtopic": "biomedical"},
+  {"q": "(\"acoustic emission\") AND (fault OR damage OR monitoring)", "subtopic": "AE"},
+  {"q": "(ti:survey OR ti:review) AND (ECG OR EEG OR \"bearing fault\" OR \"vibration analysis\") AND (signal OR deep)", "subtopic": "survey"}
+]

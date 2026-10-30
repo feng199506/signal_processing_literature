@@ -1,0 +1,15 @@
+{
+ "status": "verified",
+ "set": "software",
+ "title": "PyGSP official documentation subset (offline HTML)",
+ "files": [
+  {
+   "path": "software_docs/PyGSP_docs_html_en",
+   "url": "https://pygsp.readthedocs.io/en/stable/",
+   "html_pages": 4,
+   "files": 5,
+   "bytes": 294693
+  }
+ ],
+ "note": "官方 HTML，4 个页面全部 HTTP 200 且正文 ≥ 300 字符；已按 URL 路径保存页面本体（未镜像站外 CSS/JS），共 5 个文件；页面清单 PAGES_en.txt"
+}

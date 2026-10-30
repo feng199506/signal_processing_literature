@@ -1,0 +1,151 @@
+[
+ {
+  "arxiv": "2208.10234",
+  "subtopic": "sampling",
+  "type": "原始研究论文",
+  "level": "硕士/博士",
+  "difficulty": "中级",
+  "reason": "IEEE TSP 接受稿：时间编码与无限幅度采样的理论、算法与硬件验证，直接对应采样与重建。",
+  "summary": "An alternative to conventional uniform sampling is that of time encoding, which converts continuous-time signals into streams of trigger times. This gives rise to Event-Driven Sampling (EDS) models. The data-driven nature of EDS acquisition is advantageous in terms of power consumption and time resolution and is inspired by the information representation in biological nervous systems. If an analog",
+  "summary_basis": "arXiv 摘要（检索日）"
+ },
+ {
+  "arxiv": "2510.27110",
+  "subtopic": "sampling",
+  "type": "原始研究论文",
+  "level": "硕士/博士",
+  "difficulty": "中级",
+  "reason": "IEEE SPL：多频带信号的无限幅度采样，单通道采集与恢复，延续采样定理的当代边界。",
+  "summary": "In this paper, we address the problem of reconstructing multiband signals from modulo-folded, pointwise samples within the Unlimited Sensing Framework (USF). Focusing on a low-complexity, single-channel acquisition setup, we establish recovery guarantees demonstrating that sub-Nyquist sampling is achievable under the USF paradigm. In doing so, we also tighten the previous sampling theorem for band",
+  "summary_basis": "arXiv 摘要（检索日）"
+ },
+ {
+  "arxiv": "2410.21184",
+  "subtopic": "sampling",
+  "type": "原始研究论文",
+  "level": "硕士/博士",
+  "difficulty": "中级",
+  "reason": "带谱先验的 Shannon 型插值，讨论超越 Nyquist 速率的条件，防止把超 Nyquist 当免费午餐。",
+  "summary": "In this work, we draw connections between the classical Shannon interpolation of bandlimited deterministic signals and the literature on estimating continuous-time random processes from their samples (known in various communities under different names, such as Wiener-Kolmogorov filtering, Gaussian process regression, and kriging). This leads to the realization that Shannon interpolation can be int",
+  "summary_basis": "arXiv 摘要（检索日）"
+ },
+ {
+  "arxiv": "2410.19629",
+  "subtopic": "sampling",
+  "type": "原始研究论文",
+  "level": "硕士/博士",
+  "difficulty": "中级",
+  "reason": "系统辨识中的采样、混叠与输入条件，把采样定理接到辨识一致性。",
+  "summary": "The sampling rate of input and output signals is known to play a critical role in the identification and control of dynamical systems. For slow-sampled continuous-time systems that do not satisfy the Nyquist-Shannon sampling condition for perfect signal reconstructability, careful consideration is required when identifying parametric and nonparametric models. In this letter, a comprehensive statis",
+  "summary_basis": "arXiv 摘要（检索日）"
+ },
+ {
+  "arxiv": "2509.04199",
+  "subtopic": "sampling",
+  "type": "原始研究论文",
+  "level": "硕士/博士",
+  "difficulty": "中级",
+  "reason": "采样时钟抖动对线性系统的影响，对应时间戳与采样非理想性。",
+  "summary": "This brief, aimed at practitioners, offers an analysis of the effect of sampling-time jitter, i. e., the error produced by execution-time inaccuracies. We propose reinterpreting jitter-afflicted linear time-invariant systems through equivalent jitter-free analogs. By constructing a perceived system that absorbs the effects of timing perturbations into its dynamics, we find an affine scaling of jit",
+  "summary_basis": "arXiv 摘要（检索日）"
+ },
+ {
+  "arxiv": "2311.03676",
+  "subtopic": "LTI",
+  "type": "原始研究论文",
+  "level": "硕士/博士",
+  "difficulty": "中级",
+  "reason": "把递归滤波器严格写成 LTI 系统，澄清差分方程与频率响应。",
+  "summary": "Recursive filters are treated as linear time-invariant (LTI) systems but they are not: uninitialised, they have an infinite number of outputs for any given input, while if initialised, they are not time-invariant. This short tutorial article explains how and why they can be treated as LTI systems, thereby allowing tools such as Fourier analysis to be applied. It also explains the origin of the z-t",
+  "summary_basis": "arXiv 摘要（检索日）"
+ },
+ {
+  "arxiv": "2307.07926",
+  "subtopic": "LTI",
+  "type": "学术教程",
+  "level": "硕士",
+  "difficulty": "中级",
+  "reason": "从 Fourier 到代数信号处理讲解卷积的多种面孔。",
+  "summary": "In this expository article, we provide a self-contained overview of the notion of convolution embedded in different theories: from the classical Fourier theory to the theory of algebraic signal processing. We discuss their relations and differences. Toward the end, we provide an opinion on whether there is a consistent approach to convolution that unifies seemingly different approaches by differen",
+  "summary_basis": "arXiv 摘要（检索日）"
+ },
+ {
+  "arxiv": "2503.04514",
+  "subtopic": "sampling",
+  "type": "原始研究论文",
+  "level": "硕士/博士",
+  "difficulty": "中级",
+  "reason": "带通非均匀采样与时变 FIR 重建，覆盖抗混叠与重建滤波器。",
+  "summary": "This paper considers the reconstruction of digital complex baseband signals from M-periodically nonuniformly sampled real bandpass signals. With such a sampling, bandpass signals with arbitrary frequency locations can be sampled and reconstructed, as opposed to uniform sampling which requires the signal to be within one of the Nyquist bands. It is shown how the reconstruction can be carried out vi",
+  "summary_basis": "arXiv 摘要（检索日）"
+ },
+ {
+  "arxiv": "2202.05143",
+  "subtopic": "sampling",
+  "type": "原始研究论文",
+  "level": "硕士/博士",
+  "difficulty": "中级",
+  "reason": "ICASSP：平稳信号的均匀 ADC 采集，连接量化前的采样模型。",
+  "summary": "In this work, we consider the acquisition of stationary signals using uniform analog-to-digital converters (ADCs), i.e., employing uniform sampling and scalar uniform quantization. We jointly optimize the pre-sampling and reconstruction filters to minimize the time-averaged mean-squared error (TMSE) in recovering the continuous-time input signal for a fixed sampling rate and quantizer resolution a",
+  "summary_basis": "arXiv 摘要（检索日）"
+ },
+ {
+  "pdf_url": "https://bigwww.epfl.ch/publications/unser0001.pdf",
+  "title": "Sampling-50 Years After Shannon",
+  "authors": [
+   "Michael Unser"
+  ],
+  "date": "2000-04-01",
+  "date_basis": "IEEE Proc. 发表年（作者页 PDF）",
+  "venue": "Proceedings of the IEEE",
+  "landing": "https://bigwww.epfl.ch/publications/unser0001.html",
+  "subtopic": "sampling",
+  "type": "综述",
+  "level": "硕士",
+  "difficulty": "入门",
+  "classic_reason": "Shannon 采样之后 50 年的权威综述，统一带限、移位不变空间与广义采样。",
+  "reason": "采样与重建的经典综述，是本科到研究生的桥。",
+  "summary": "回顾 Shannon 采样定理及其在移位不变空间、多采样率与广义线性测量下的扩展。",
+  "summary_basis": "作者页摘要/标题"
+ },
+ {
+  "arxiv": "2111.10765",
+  "subtopic": "sampling",
+  "type": "原始研究论文",
+  "reason": "IEEE TSP：宽带时变信道的正交延迟尺度空间调制。",
+  "summary": "Orthogonal Time Frequency Space (OTFS) modulation is a recently proposed scheme for time-varying narrowband channels in terrestrial radio-frequency communications. Underwater acoustic (UWA) and ultra-wideband (UWB) communication systems, on the other hand, confront wideband time-varying channels. Unlike narrowband channels, for which time contractions or dilations due to Doppler effect can be appr",
+  "summary_basis": "arXiv 摘要（检索日）",
+  "level": "硕士/博士",
+  "difficulty": "中级"
+ },
+ {
+  "arxiv": "2207.13230",
+  "subtopic": "sampling",
+  "type": "原始研究论文",
+  "reason": "IEEE SPL：无限幅度采样与稀疏超分辨及硬件验证。",
+  "summary": "The Unlimited Sensing Framework (USF) is a digital acquisition protocol that allows for sampling and reconstruction of high dynamic range signals. By acquiring modulo samples, the USF circumvents the clipping or saturation problem that is a fundamental bottleneck in conventional analog-to-digital converters (ADCs). In the context of the USF, several works have focused on bandlimited function class",
+  "summary_basis": "arXiv 摘要（检索日）",
+  "level": "硕士/博士",
+  "difficulty": "中级"
+ },
+ {
+  "arxiv": "2404.18850",
+  "subtopic": "sampling",
+  "type": "原始研究论文",
+  "reason": "IEEE SPL：分数 Fourier 域稀疏采样的恢复保证与 CRLB。",
+  "summary": "Sampling theory in fractional Fourier Transform (FrFT) domain has been studied extensively in the last decades. This interest stems from the ability of the FrFT to generalize the traditional Fourier Transform, broadening the traditional concept of bandwidth and accommodating a wider range of functions that may not be bandlimited in the Fourier sense. Beyond bandlimited functions, sampling and reco",
+  "summary_basis": "arXiv 摘要（检索日）",
+  "level": "硕士/博士",
+  "difficulty": "中级"
+ },
+ {
+  "arxiv": "2303.01927",
+  "subtopic": "sampling",
+  "type": "原始研究论文",
+  "reason": "用 Koopman 算子给出广义 Nyquist-Shannon 采样定理。",
+  "summary": "In the field of signal processing, the sampling theorem plays a fundamental role for signal reconstruction as it bridges the gap between analog and digital signals. Following the celebrated Nyquist-Shannon sampling theorem, generalizing the sampling theorem to non-band-limited signals remains a major challenge. In this work, a generalized sampling theorem, which builds upon the Koopman operator, i",
+  "summary_basis": "arXiv 摘要（检索日）",
+  "level": "硕士/博士",
+  "difficulty": "中级"
+ }
+]

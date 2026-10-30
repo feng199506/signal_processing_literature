@@ -1,0 +1,20 @@
+{
+ "status": "verified",
+ "set": "projects",
+ "title": "CMSIS-DSP source snapshot",
+ "files": [
+  {
+   "path": "projects/CMSIS_DSP_src_en",
+   "url": "https://github.com/ARM-software/CMSIS-DSP",
+   "commit": "dce4b4f1db66fc794d91b8a703bcbd3b35ea8e30",
+   "files": 6672,
+   "archive_sha256": "fccd08b5004097d71cec63fe1be00c908c02a64fe0dd879fa96e92445c70797a",
+   "bytes": 46275951
+  }
+ ],
+ "commit": "dce4b4f1db66fc794d91b8a703bcbd3b35ea8e30",
+ "license_files": [
+  "LICENSE"
+ ],
+ "note": "官方仓库快照 commit dce4b4f1db66：归档 zip 完整性通过，解压 6672 个文件（3 个 notebook）；应有文件已见 ['Source/', 'LICENSE']；许可证文件 ['LICENSE']；未发现 LFS 指针文件"
+}

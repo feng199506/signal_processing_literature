@@ -1,0 +1,20 @@
+{
+ "status": "verified",
+ "set": "projects",
+ "title": "Stone Soup multi-sensor tracking framework",
+ "files": [
+  {
+   "path": "projects/StoneSoup_src_en",
+   "url": "https://github.com/dstl/Stone-Soup",
+   "commit": "b27fa86597cc1b09f733c9a6f400dfd518b38e01",
+   "files": 764,
+   "archive_sha256": "1c6f80c44753071dcfa6cf2527dff4d6d59d4a5a8c94ae70343b04b5cdc4da6f",
+   "bytes": 24555424
+  }
+ ],
+ "commit": "b27fa86597cc1b09f733c9a6f400dfd518b38e01",
+ "license_files": [
+  "LICENSE"
+ ],
+ "note": "官方仓库快照 commit b27fa86597cc：归档 zip 完整性通过，解压 764 个文件（3 个 notebook）；应有文件已见 ['stonesoup/', 'LICENSE']；许可证文件 ['LICENSE']；未发现 LFS 指针文件"
+}

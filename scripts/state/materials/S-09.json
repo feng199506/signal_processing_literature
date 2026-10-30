@@ -1,0 +1,15 @@
+{
+ "status": "verified",
+ "set": "software",
+ "title": "torchaudio official documentation subset (offline HTML)",
+ "files": [
+  {
+   "path": "software_docs/torchaudio_docs_html_en",
+   "url": "https://pytorch.org/audio/stable/index.html",
+   "html_pages": 5,
+   "files": 6,
+   "bytes": 1662524
+  }
+ ],
+ "note": "官方 HTML，5 个页面全部 HTTP 200 且正文 ≥ 400 字符；已按 URL 路径保存页面本体（未镜像站外 CSS/JS），共 6 个文件；页面清单 PAGES_en.txt"
+}

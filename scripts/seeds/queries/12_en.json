@@ -1,0 +1,6 @@
+[
+  {"q": "cat:eess.SP AND (\"real-time\" OR streaming OR online) AND (DSP OR FFT OR filter) AND (latency OR embedded OR GPU)", "subtopic": "realtime"},
+  {"q": "(FPGA OR \"fixed-point\" OR CMSIS OR microcontroller) AND (FFT OR FIR OR DSP)", "subtopic": "embedded"},
+  {"q": "(\"overlap-add\" OR \"overlap-save\" OR \"frame-based\" OR \"sliding window\") AND (streaming OR real-time) AND (STFT OR filter)", "subtopic": "framing"},
+  {"q": "(ti:survey OR ti:tutorial) AND (\"embedded DSP\" OR \"real-time signal processing\" OR \"GPU FFT\")", "subtopic": "survey"}
+]

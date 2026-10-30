@@ -1,0 +1,20 @@
+{
+ "status": "verified",
+ "set": "books",
+ "title": "Kalman and Bayesian Filters in Python",
+ "files": [
+  {
+   "path": "books/Labbe_KalmanBayesianFiltersInPython_en",
+   "url": "https://github.com/rlabbe/Kalman-and-Bayesian-Filters-in-Python",
+   "commit": "04b2bea802321086effbd99402fc13c893d11110",
+   "files": 167,
+   "archive_sha256": "50c4744a78c57c48047fce2f1423d9285ada98258aea74372f547aade50fa978",
+   "bytes": 21089096
+  }
+ ],
+ "commit": "04b2bea802321086effbd99402fc13c893d11110",
+ "license_files": [
+  "license.html"
+ ],
+ "note": "官方仓库快照 commit 04b2bea80232：归档 zip 完整性通过，解压 167 个文件（44 个 notebook）；应有文件已见 ['README.md', '00-Preface.ipynb', '04-One-Dimensional-Kalman-Filters.ipynb']；许可证文件 ['license.html']；未发现 LFS 指针文件"
+}

@@ -1,0 +1,15 @@
+{
+ "status": "verified",
+ "set": "books",
+ "title": "An Introduction to Statistical Signal Processing",
+ "files": [
+  {
+   "path": "books/GrayDavisson_IntroductionStatisticalSignalProcessing_2011_en.pdf",
+   "url": "https://ee.stanford.edu/~gray/sp.pdf",
+   "pages": 475,
+   "sha256": "182853cef379288754bcd97f0e703529a763f758d97a79c20d111b8967e1dfe6",
+   "bytes": 2437469
+  }
+ ],
+ "note": "HTTP 200；%PDF；pypdf 可解析 475 页；名称短语已见"
+}

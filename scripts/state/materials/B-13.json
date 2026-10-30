@@ -1,0 +1,15 @@
+{
+ "status": "verified",
+ "set": "books",
+ "title": "Physical Audio Signal Processing for Virtual Musical Instruments and Audio Effects",
+ "files": [
+  {
+   "path": "books/Smith_PhysicalAudioSignalProcessing_html_en",
+   "url": "https://ccrma.stanford.edu/~jos/pasp/pasp.html",
+   "html_pages": 793,
+   "files": 796,
+   "bytes": 10214683
+  }
+ ],
+ "note": "官方 HTML 目录镜像：首页 HTTP 200 且名称短语已见；wget -r -np -l 1 保存 793 个 HTML、共 796 个文件（未保存音视频安装包）"
+}

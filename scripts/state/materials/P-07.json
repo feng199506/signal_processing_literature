@@ -1,0 +1,20 @@
+{
+ "status": "verified",
+ "set": "projects",
+ "title": "PyGSP source snapshot",
+ "files": [
+  {
+   "path": "projects/PyGSP_src_en",
+   "url": "https://github.com/epfl-lts2/pygsp",
+   "commit": "4716b12c470c579e3f477f2d1c1d99752c73252d",
+   "files": 121,
+   "archive_sha256": "3f1a4cc2965e0064f44d6396c8e963cb3f46ee8a3343dc06aeacc1b3aaf85aa7",
+   "bytes": 2150293
+  }
+ ],
+ "commit": "4716b12c470c579e3f477f2d1c1d99752c73252d",
+ "license_files": [
+  "LICENSE.txt"
+ ],
+ "note": "官方仓库快照 commit 4716b12c470c：归档 zip 完整性通过，解压 121 个文件（1 个 notebook）；应有文件已见 ['pygsp/', 'LICENSE.txt']；许可证文件 ['LICENSE.txt']；未发现 LFS 指针文件"
+}

@@ -1,0 +1,42 @@
+[
+ {
+  "arxiv": "2308.02418",
+  "subtopic": "STFT",
+  "type": "原始研究论文",
+  "reason": "对窗长可微的自适应 STFT。"
+ },
+ {
+  "arxiv": "2202.03835",
+  "subtopic": "STFT",
+  "type": "原始研究论文",
+  "reason": "IEEE TSP：协变离散时频表示。"
+ },
+ {
+  "arxiv": "2609.29119",
+  "subtopic": "other TF",
+  "type": "原始研究论文",
+  "reason": "可逆 Constant-Q 的精确分解与快速计算。"
+ },
+ {
+  "arxiv": "0912.2437",
+  "subtopic": "wavelet",
+  "type": "原始研究论文",
+  "classic_reason": "Daubechies-Lu-Wu 同步压缩小波，非平稳分解标准工具。",
+  "reason": "记录 EMD 式分解的假设与限制。"
+ },
+ {
+  "arxiv": "1101.2286",
+  "subtopic": "wavelet",
+  "type": "原始研究论文",
+  "classic_reason": "Mallat 群不变散射，多分辨率稳定特征。",
+  "reason": "小波散射的数学基础。"
+ },
+ {
+  "arxiv": "1304.6763",
+  "subtopic": "wavelet",
+  "type": "原始研究论文",
+  "classic_reason": "Deep Scattering Spectrum，把散射接到音频频谱。",
+  "reason": "散射谱与音频时频。",
+  "reserve": true
+ }
+]

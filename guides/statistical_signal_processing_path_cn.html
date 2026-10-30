@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"><title>统计信号处理路线</title>
+<style>body{font-family:"Microsoft YaHei","PingFang SC","Noto Sans CJK SC",sans-serif;max-width:1100px;margin:2em auto;
+padding:0 1em;line-height:1.6;color:#222}table{border-collapse:collapse;margin:1em 0;font-size:14px}th,td{border:1px solid #ccc;
+padding:4px 8px;vertical-align:top}th{background:#f3f3f3}code{background:#f5f5f5;padding:0 3px}pre{background:#f5f5f5;padding:8px;
+overflow:auto}a{color:#0645ad}.muted{color:#888}.nav{font-size:14px;margin-bottom:1em}</style>
+<script>window.MathJax={tex:{inlineMath:[["\\(","\\)"]],displayMath:[["\\[","\\]"],["$$","$$"]]}};</script>
+<script defer src="../_offline_libs/mathjax-3.2.2/es5/tex-mml-chtml.js"></script>
+</head><body>
+<div class="nav"><a href="../index_cn.html">← 离线首页 index_cn.html</a></div>
+<h1>统计信号处理路线</h1>
+<p>对应 <a href="../03_statistical_signal_processing/"><code>03_statistical_signal_processing/</code></a> 与 <a href="../05_adaptive_filtering_estimation/"><code>05_adaptive_filtering_estimation/</code></a>。强调相关、功率谱、检测估计、滤波与平滑的因果性。本轮不运行代码。</p>
+<h2>先修</h2>
+<p><a href="foundations_path_cn.html"><code>guides/foundations_path_cn.md</code></a> 中的 LTI、DFT 与采样。本科概率（期望、协方差、条件分布）。</p>
+<h2>理论主线</h2>
+<ol><li><strong>随机信号与二阶矩</strong>   教材：<code>books/GrayDavisson_IntroductionStatisticalSignalProcessing_2011_en.pdf</code>（B-07）。 卷积与功率谱的代数：<a href="../books/Gray_ToeplitzCirculantMatrices_en.pdf"><code>books/Gray_ToeplitzCirculantMatrices_en.pdf</code></a>（B-16）。 课程：<a href="../courses/MIT_OCW_6_011_SignalsSystemsInference_S2018_en.zip"><code>courses/MIT_OCW_6_011_SignalsSystemsInference_S2018_en.zip</code></a>（C-04，信号、系统与推断）。</li></ol>
+<ol><li><strong>功率谱估计</strong>   文档：<a href="../software_docs/SciPy_1.16_signal_fft_docs_html_en/docs.scipy.org/doc/scipy/reference/signal.html"><code>software_docs/SciPy_1.16_signal_fft_docs_html_en/</code></a> 中 Welch。 近五年：<a href="../03_statistical_signal_processing/papers/2022_Hong_EstimationEvolutionaryPowerSpectral_en.pdf"><code>03_statistical_signal_processing/papers/2022_Hong_EstimationEvolutionaryPowerSpectral_en.pdf</code></a>、<code>2026_Magsino_CrossCorrelationPeriodogramsDecaying_en.pdf</code>。 进化谱、短时方法都假设局部平稳；违反时改走时频路线。</li></ol>
+<ol><li><strong>检测与估计、假设检验</strong>   近五年：<code>2022_Luong_FamilyNeymanPearsonDetectors_en.pdf</code>、<code>2023_Wang_CramerRaoLowerBound_en.pdf</code>、<code>2023_Lamperski_NonAsymptoticPointwiseWorst_en.pdf</code>。 课程中的检测与信号空间：<a href="../courses/MIT_OCW_6_450_DigitalCommunications_I_F2006_en.zip"><code>courses/MIT_OCW_6_450_DigitalCommunications_I_F2006_en.zip</code></a>。 记录量：虚警/漏检随阈值与样本数变化，不要只用一次准确率。</li></ol>
+<ol><li><strong>Wiener / LMS / RLS</strong>   近五年：<a href="../05_adaptive_filtering_estimation/papers/2022_Colburn_FunctionalWienerFilter_en.pdf"><code>05_adaptive_filtering_estimation/papers/2022_Colburn_FunctionalWienerFilter_en.pdf</code></a>、<code>2025_Zhao_TransientErrorAnalysisLMS_en.pdf</code>。 在线实现：<a href="../projects/padasip_src_en/"><code>projects/padasip_src_en/</code></a>（commit <code>4c13692b8f7c</code>，样本级更新，因果）。</li></ol>
+<ol><li><strong>Kalman、EKF/UKF、粒子滤波与平滑</strong>   教材：<code>books/Sarkka_BayesianFilteringSmoothing_2e_en.pdf</code>（B-08，作者站点个人使用 PDF）。 连续—离散：<code>books/SarkkaSolin_AppliedSDEs_2019_en.pdf</code>（B-09）。 代码书：<a href="../books/Labbe_KalmanBayesianFiltersInPython_en/"><code>books/Labbe_KalmanBayesianFiltersInPython_en/</code></a>（B-15）与 <a href="../projects/filterpy_src_en/"><code>projects/filterpy_src_en/</code></a>（commit <code>5df4e095fac0</code>）。 多传感器跟踪框架：<a href="../projects/StoneSoup_src_en/"><code>projects/StoneSoup_src_en/</code></a>（commit <code>b27fa86597cc</code>）。 <strong>硬区分</strong>：滤波器用到当前及过去观测；平滑用未来观测。B-08 与 FilterPy 同时提供 smoother，平滑结果不得称为可在线使用。</li></ol>
+<ol><li><strong>可学习滤波（接到 11）</strong>   经典补充：<a href="../05_adaptive_filtering_estimation/papers/2021_Revach_KalmanNet_en.pdf"><code>05_adaptive_filtering_estimation/papers/2021_Revach_KalmanNet_en.pdf</code></a>（v1 略早于窗口，已单列）。 官方代码：<a href="../projects/KalmanNet_official_en/"><code>projects/KalmanNet_official_en/</code></a>（commit <code>828a2cf529bc</code>，未见根目录许可证文件，权重未下载）。 另见 <code>2023_Buchnik_LatentKalmanNet_en.pdf</code>、<code>2023_Chen_OverviewDifferentiableParticleFilters_en.pdf</code>。</li></ol>
+<h2>不确定性怎么写进实验记录</h2>
+<ul><li>估计器：给出偏差、方差或 CRLB 对照，而不是单点误差。</li><li>检测器：ROC 或虚警约束下的检测概率；阈值随噪声与样本数变。</li><li>自适应滤波：稳态 MSE 与瞬态；步长过大则发散。</li><li>时间切分：先切分再做任何依赖标签的预处理，避免用未来统计量标准化训练集。</li></ul>
+<h2>下一跳</h2>
+<p>工业振动/电流/生物信号 → <a href="industrial_applications_path_cn.html"><code>guides/industrial_applications_path_cn.md</code></a>。<br>
+实时部署中的延迟与定点 → <a href="realtime_deployment_cn.html"><code>guides/realtime_deployment_cn.md</code></a>。</p>
+</body></html>

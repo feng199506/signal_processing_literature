@@ -214,7 +214,57 @@ def page_text(body):
     return re.sub(r"\s+", " ", htmlmod.unescape(re.sub(r"<[^>]+>", " ", t))).strip()
 
 
+def _looks_html(body, ct):
+    return ("html" in (ct or "").lower()) or (
+        body and (b"<html" in body[:4000].lower() or b"<!doctype" in body[:400].lower())
+    )
+
+
+def _save_html_body(site, url, body, final):
+    parsed = urllib.parse.urlparse(final or url)
+    rel = parsed.path.lstrip("/")
+    if not rel or rel.endswith("/"):
+        rel = (rel or "") + "index.html"
+    elif "." not in Path(rel).name:
+        rel = rel.rstrip("/") + "/index.html"
+    out = site / parsed.netloc / rel
+    if parsed.query:
+        out = out.with_name(out.stem + "_" + safe(parsed.query)[:40] + (out.suffix or ".html"))
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_bytes(body)
+    return out
+
+
 def do_html(it, stage):
+    lang = it.get("lang", "en")
+    site = stage / f"{it['name']}_html_{lang}"
+    site.mkdir()
+    minc = it.get("min_chars", 1500)
+    st, body, final, ct = get(it["index_url"])
+    if st != 200 or not _looks_html(body, ct):
+        return None, f"首页 HTTP {st} {ct}: {it['index_url']}"
+    first = page_text(body)
+    if it.get("title_phrase") and norm(it["title_phrase"]) not in norm(first):
+        return None, f"首页未见名称短语“{it['title_phrase']}”"
+    if it.get("mirror"):
+        base = it.get("mirror_url") or (it["index_url"].rsplit("/", 1)[0] + "/")
+        r = subprocess.run(
+            ["wget", "-q", "-r", "-np", "-nH", "-E", "-k", "-l", str(it.get("mirror_depth", 2)),
+             "--wait=0.3", "-T", "60", "-t", "2", "-R", "mp3,wav,zip,mp4,mov",
+             "-e", "robots=on", "-U", UA, "-P", str(site), base],
+            capture_output=True, timeout=1800)
+        if r.returncode not in (0, 8):
+            return None, f"镜像 wget 失败 {r.returncode}: {base}"
+        nhtml = sum(1 for p in site.rglob("*") if p.suffix.lower() in {".html", ".htm", ".xhtml"})
+        if nhtml < it.get("min_files", 1):
+            return None, f"镜像仅 {nhtml} 个 HTML < {it.get('min_files')}"
+        nfiles = sum(1 for p in site.rglob("*") if p.is_file())
+        nbytes = sum(p.stat().st_size for p in site.rglob("*") if p.is_file())
+        (site / f"PAGES_{lang}.txt").write_text(f"mirror {base}\nindex {it['index_url']}\n")
+        note = (f"官方 HTML 目录镜像：首页 HTTP 200 且名称短语已见；wget -r -np -l {it.get('mirror_depth', 2)} "
+                f"保存 {nhtml} 个 HTML、共 {nfiles} 个文件（未保存音视频安装包）")
+        return {"files": [{"path": site.name, "url": it["index_url"], "html_pages": nhtml, "files": nfiles,
+                           "bytes": nbytes}], "note": note}, "ok"
     pages = [it["index_url"]]
     if it.get("link_regex"):
         found, why = links_from(it["index_url"], it["link_regex"])
@@ -224,38 +274,27 @@ def do_html(it, stage):
     pages += [u for u in it.get("extra_pages", []) if u not in pages]
     if len(pages) < it.get("min_files", 1):
         return None, f"目录只解析到 {len(pages)} 页 < {it.get('min_files')}"
-    lang = it.get("lang", "en")
-    site = stage / f"{it['name']}_html_{lang}"
-    site.mkdir()
-    first = ""
-    minc = it.get("min_chars", 1500)
     short = []
+    saved = []
     for u in pages:
-        st, body, final, ct = get(u)
-        looks_html = ("html" in (ct or "").lower()) or (
-            body and (b"<html" in body[:4000].lower() or b"<!doctype" in body[:400].lower())
-        )
-        if st != 200 or not looks_html:
-            return None, f"页面 HTTP {st} {ct}: {u}"
-        txt = page_text(body)
-        if not first:
-            first = txt
+        if u == it["index_url"]:
+            st2, body2, final2, ct2 = st, body, final, ct
+        else:
+            st2, body2, final2, ct2 = get(u)
+        if st2 != 200 or not _looks_html(body2, ct2):
+            return None, f"页面 HTTP {st2} {ct2}: {u}"
+        txt = page_text(body2)
         if len(txt) < minc:
             short.append(u)
-        r = subprocess.run(["wget", "-q", "-E", "-k", "-p", "-np", "-e", "robots=on", "--wait=1", "-T", "60",
-                            "-t", "2", "-U", UA, "-P", str(site), u], capture_output=True, timeout=900)
-        if r.returncode not in (0, 8):
-            return None, f"wget 失败 {r.returncode}: {u}"
+        saved.append(str(_save_html_body(site, u, body2, final2)))
     if len(short) > it.get("allow_short", 0):
         return None, f"{len(short)} 个页面正文 < {minc} 字符，如 {short[0]}"
-    if it.get("title_phrase") and norm(it["title_phrase"]) not in norm(first):
-        return None, f"首页未见名称短语“{it['title_phrase']}”"
     (site / f"PAGES_{lang}.txt").write_text("\n".join(pages) + "\n")
     nfiles = sum(1 for p in site.rglob("*") if p.is_file())
     nbytes = sum(p.stat().st_size for p in site.rglob("*") if p.is_file())
     note = (f"官方 HTML，{len(pages)} 个页面全部 HTTP 200 且正文 ≥ {minc} 字符"
             + (f"（允许 {len(short)} 个短页：目录/附录页）" if short else "")
-            + f"；wget 离线保存（页面资源、链接改写），共 {nfiles} 个文件；页面清单 PAGES_{lang}.txt")
+            + f"；已按 URL 路径保存页面本体（未镜像站外 CSS/JS），共 {nfiles} 个文件；页面清单 PAGES_{lang}.txt")
     return {"files": [{"path": site.name, "url": it["index_url"], "html_pages": len(pages), "files": nfiles,
                        "bytes": nbytes}], "note": note}, "ok"
 

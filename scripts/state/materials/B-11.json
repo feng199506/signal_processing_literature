@@ -1,0 +1,15 @@
+{
+ "status": "verified",
+ "set": "books",
+ "title": "Introduction to Digital Filters with Audio Applications",
+ "files": [
+  {
+   "path": "books/Smith_IntroductionDigitalFilters_html_en",
+   "url": "https://ccrma.stanford.edu/~jos/filters/filters.html",
+   "html_pages": 386,
+   "files": 389,
+   "bytes": 4845501
+  }
+ ],
+ "note": "官方 HTML 目录镜像：首页 HTTP 200 且名称短语已见；wget -r -np -l 1 保存 386 个 HTML、共 389 个文件（未保存音视频安装包）"
+}

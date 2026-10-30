@@ -1,0 +1,8 @@
+﻿编号,资料类型,标题,状态,说明,地址
+P02-001,论文/综述/教程,Fast Signal Interpolation Through Zero-padding and FFT/IFFT,fail,可提取文字仅 11116 字符（可能为扫描件或残缺）,https://arxiv.org/pdf/2407.06502
+P02-006,论文/综述/教程,"Fast Compressed-Domain N-Point Discrete Fourier Transform: The ""Twiddless"" FFT Algorithm",fail,下载失败：HTTP 404 ,https://arxiv.org/pdf/2505.23718
+P02-007,论文/综述/教程,Simple Method for Perfect Reconstruction QMF Filter Design,fail,仅 3 页,https://arxiv.org/pdf/2210.15635
+P05-008,论文/综述/教程,A New Approach to Linear Filtering and Prediction Problems,fail,下载失败：HTTP 404 ,https://www.cs.unc.edu/~welch/kalman/media/pdf/Kalman1960.pdf
+P11-007,论文/综述/教程,Algorithm Unrolling-based Denoising of Multimodal Graph Signals,dup_elsewhere,已由 06 群收录，本群不重复计数,https://arxiv.org/pdf/2505.22175
+S-13,官方软件文档,MathWorks Signal Processing / DSP / Wavelet Toolbox public documentation subset,failed,页面 HTTP 404 : https://www.mathworks.com/help/signal/filter-implementation-and-analysis.html,https://www.mathworks.com/help/signal/index.html
+P-12,参考项目/实验,NeuroKit2 biosignal processing snapshot,failed,归档 362 MiB 超过上限,https://github.com/neuropsychology/NeuroKit

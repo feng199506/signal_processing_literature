@@ -1,0 +1,102 @@
+[
+ {
+  "arxiv": "2407.06502",
+  "subtopic": "DFT-FFT",
+  "type": "原始研究论文",
+  "reason": "零填充与 FFT/IFFT 插值。",
+  "summary": "Based on the sampling theorem, interpolation should be conducted by employing the sinc functions as the kernels. Inspired by the fact that the discrete Fourier transform (DFT) is sampled from the discrete time Fourier transform, a fast signal interpolation algorithm based on zero-padding and fast Fourier transform (FFT) and inverse FFT (IFFT) is presented. This algorithm gives a good approximate o",
+  "summary_basis": "arXiv 摘要（检索日）",
+  "level": "硕士/博士",
+  "difficulty": "中级"
+ },
+ {
+  "arxiv": "2302.08845",
+  "subtopic": "filter design",
+  "type": "原始研究论文",
+  "reason": "FIR 的 overlap-add/overlap-save 频域实现。",
+  "summary": "In this paper, new insights in frequency-domain implementations of digital finite-length impulse response filtering (linear convolution) using overlap-add and overlap-save techniques are provided. It is shown that, in practical finite-wordlength implementations, the overall system corresponds to a time-varying system that can be represented in essentially two different ways. One way is to represen",
+  "summary_basis": "arXiv 摘要（检索日）",
+  "level": "硕士/博士",
+  "difficulty": "中级"
+ },
+ {
+  "arxiv": "2501.18470",
+  "subtopic": "multirate",
+  "type": "原始研究论文",
+  "reason": "TASLP：多采样率神经音频效应的重采样滤波器。",
+  "summary": "Neural networks have become ubiquitous in audio effects modelling, especially for guitar amplifiers and distortion pedals. One limitation of such models is that the sample rate of the training data is implicitly encoded in the model weights and therefore not readily adjustable at inference. Recent work explored modifications to recurrent neural network architecture to approximate a sample rate ind",
+  "summary_basis": "arXiv 摘要（检索日）",
+  "level": "硕士/博士",
+  "difficulty": "中级"
+ },
+ {
+  "arxiv": "2312.15267",
+  "subtopic": "DFT-FFT",
+  "type": "原始研究论文",
+  "reason": "指数型窗函数，对应频谱泄漏。",
+  "summary": "The Discrete Fourier Transform (DFT) is widely utilized for signal analysis but is plagued by spectral leakage, leading to inaccuracies in signal approximation. Window functions play a crucial role in mitigating spectral leakage by providing weighting mechanisms for discrete signals. In this paper, we introduce a novel window type based on exponential function, allowing for adjustable parameters a",
+  "summary_basis": "arXiv 摘要（检索日）",
+  "level": "硕士/博士",
+  "difficulty": "中级"
+ },
+ {
+  "arxiv": "2401.16044",
+  "subtopic": "DFT-FFT",
+  "type": "原始研究论文",
+  "reason": "结构化支撑信号的 DFT 数值稳定性。",
+  "summary": "We consider the problem of building numerically stable algorithms for computing Discrete Fourier Transform (DFT) of $N$- length signals with known frequency support of size $k$. A typical algorithm, in this case, would involve solving (possibly poorly conditioned) system of equations, causing numerical instability. When $N$ is a power of 2, and the frequency support is a random subset of $\\mathbb{",
+  "summary_basis": "arXiv 摘要（检索日）",
+  "level": "硕士/博士",
+  "difficulty": "中级"
+ },
+ {
+  "arxiv": "2505.23718",
+  "subtopic": "DFT-FFT",
+  "type": "原始研究论文",
+  "reason": "Twiddless FFT / 压缩域 DFT。",
+  "summary": "In this work, we present the \\emph{twiddless fast Fourier transform (TFFT)}, a novel algorithm for computing the $N$-point discrete Fourier transform (DFT). The TFFT's divide strategy builds on recent results that decimate an $N$-point signal (by a factor of $p$) into an $N/p$-point compressed signal whose DFT readily yields $N/p$ coefficients of the original signal. However, existing compression-",
+  "summary_basis": "arXiv 摘要（检索日）",
+  "level": "硕士/博士",
+  "difficulty": "中级"
+ },
+ {
+  "arxiv": "2210.15635",
+  "subtopic": "filter design",
+  "type": "原始研究论文",
+  "reason": "完全重构 QMF 滤波器设计。",
+  "summary": "The purpose of this work is the design of FIR QMF (Quadrature Mirror Filters) filters of perfect reconstruction and odd number of coefficients (even order). By design, these filters will have linear phase and integer delay. These filter pairs have many applications in wavelet transforms and other multi-frequency decompositions. Perfect reconstruction filters have been studied from long time ago bu",
+  "summary_basis": "arXiv 摘要（检索日）",
+  "level": "硕士/博士",
+  "difficulty": "中级"
+ },
+ {
+  "arxiv": "2310.00912",
+  "subtopic": "filter design",
+  "type": "原始研究论文",
+  "reason": "资源高效 FIR 设计。",
+  "summary": "In modern digital filter chip design, efficient resource utilization is a hot topic. Due to the linear phase characteristics of FIR filters, a pulsed fully parallel structure can be applied to address the problem. To further reduce hardware resource consumption, especially related to multiplication functions, an improved RAG algorithm has been proposed. Filters with different orders and for differ",
+  "summary_basis": "arXiv 摘要（检索日）",
+  "level": "硕士/博士",
+  "difficulty": "中级"
+ },
+ {
+  "arxiv": "2409.15884",
+  "subtopic": "multirate",
+  "type": "原始研究论文",
+  "reason": "采样率无关音频效应的插值滤波器。",
+  "summary": "Recurrent neural networks (RNNs) are effective at emulating the non-linear, stateful behavior of analog guitar amplifiers and distortion effects. Unlike the case of direct circuit simulation, RNNs have a fixed sample rate encoded in their model weights, making the sample rate non-adjustable during inference. Recent work has proposed increasing the sample rate of RNNs at inference (oversampling) by",
+  "summary_basis": "arXiv 摘要（检索日）",
+  "level": "硕士/博士",
+  "difficulty": "中级"
+ },
+ {
+  "arxiv": "2602.15218",
+  "subtopic": "DFT-FFT",
+  "type": "原始研究论文",
+  "reason": "IEEE TSP：基于质因数算法的无乘法 DFT 近似。",
+  "summary": "Matrix approximation methods have successfully produced efficient, low-complexity approximate transforms for the discrete cosine transforms and the discrete Fourier transforms. For the DFT case, literature archives approximations operating at small power-of-two blocklenghts, such as \\{8, 16, 32\\}, or at large blocklengths, such as 1024, which are obtained by means of the Cooley-Tukey-based approxi",
+  "summary_basis": "arXiv 摘要（检索日）",
+  "level": "硕士/博士",
+  "difficulty": "中级"
+ }
+]

@@ -1,0 +1,20 @@
+{
+ "status": "verified",
+ "set": "projects",
+ "title": "FilterPy Kalman and Bayesian filter library",
+ "files": [
+  {
+   "path": "projects/filterpy_src_en",
+   "url": "https://github.com/rlabbe/filterpy",
+   "commit": "5df4e095fac07684a05c495bd72d3424f7c68c9c",
+   "files": 123,
+   "archive_sha256": "33b1cfa8443ac720ea842bbfa77c9355556ee40666be18f6611a71ac4c11ad87",
+   "bytes": 235489
+  }
+ ],
+ "commit": "5df4e095fac07684a05c495bd72d3424f7c68c9c",
+ "license_files": [
+  "LICENSE"
+ ],
+ "note": "官方仓库快照 commit 5df4e095fac0：归档 zip 完整性通过，解压 123 个文件（0 个 notebook）；应有文件已见 ['filterpy/']；许可证文件 ['LICENSE']；未发现 LFS 指针文件"
+}

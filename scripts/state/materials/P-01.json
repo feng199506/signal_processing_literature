@@ -1,0 +1,20 @@
+{
+ "status": "verified",
+ "set": "projects",
+ "title": "ThinkDSP companion code (Allen Downey)",
+ "files": [
+  {
+   "path": "projects/ThinkDSP_code_en",
+   "url": "https://github.com/AllenDowney/ThinkDSP",
+   "commit": "f9efe78b9e58224007d939253393f884b43dc309",
+   "files": 338,
+   "archive_sha256": "565eb5382965d92c599a615cc6d93a75182770b3d81351cd2106478ca224e1ed",
+   "bytes": 104800413
+  }
+ ],
+ "commit": "f9efe78b9e58224007d939253393f884b43dc309",
+ "license_files": [
+  "LICENSE"
+ ],
+ "note": "官方仓库快照 commit f9efe78b9e58：归档 zip 完整性通过，解压 338 个文件（56 个 notebook）；应有文件已见 ['thinkdsp/', 'README.md']；许可证文件 ['LICENSE']；未发现 LFS 指针文件"
+}

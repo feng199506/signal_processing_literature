@@ -1,0 +1,20 @@
+{
+ "status": "verified",
+ "set": "projects",
+ "title": "pyroomacoustics source snapshot",
+ "files": [
+  {
+   "path": "projects/pyroomacoustics_src_en",
+   "url": "https://github.com/LCAV/pyroomacoustics",
+   "commit": "ff7d61f219e4eb41489963c4bb5f57bea5bc2c69",
+   "files": 360,
+   "archive_sha256": "528369271adef954cc48259021453decd4b0eb9021f79f4b66eb2c673cd6833e",
+   "bytes": 145526903
+  }
+ ],
+ "commit": "ff7d61f219e4eb41489963c4bb5f57bea5bc2c69",
+ "license_files": [
+  "LICENSE"
+ ],
+ "note": "官方仓库快照 commit ff7d61f219e4：归档 zip 完整性通过，解压 360 个文件（5 个 notebook）；应有文件已见 ['pyroomacoustics/', 'LICENSE']；许可证文件 ['LICENSE']；未发现 LFS 指针文件"
+}

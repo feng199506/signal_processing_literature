@@ -1,0 +1,75 @@
+[
+ {
+  "arxiv": "1211.0053",
+  "subtopic": "GSP",
+  "type": "综述",
+  "classic_reason": "Shuman 等 IEEE SPM，图信号处理兴起综述。",
+  "reason": "图 Fourier 与图滤波标准入口。",
+  "summary": "In applications such as social, energy, transportation, sensor, and neuronal networks, high-dimensional data naturally reside on the vertices of weighted graphs. The emerging field of signal processing on graphs merges algebraic and spectral graph theoretic concepts with computational harmonic analysis to process such signals on graphs. In this tutorial overview, we outline the main challenges of ",
+  "summary_basis": "arXiv 摘要（检索日）",
+  "level": "硕士/博士",
+  "difficulty": "中级"
+ },
+ {
+  "arxiv": "1712.00468",
+  "subtopic": "GSP",
+  "type": "学术教程",
+  "classic_reason": "Ortega 等 GSP 导论。",
+  "reason": "图滤波、挑战与应用。",
+  "summary": "Research in Graph Signal Processing (GSP) aims to develop tools for processing data defined on irregular graph domains. In this paper we first provide an overview of core ideas in GSP and their connection to conventional digital signal processing. We then summarize recent developments in developing basic GSP tools, including methods for sampling, filtering or graph learning. Next, we review progre",
+  "summary_basis": "arXiv 摘要（检索日）",
+  "level": "硕士/博士",
+  "difficulty": "中级"
+ },
+ {
+  "arxiv": "2508.21415",
+  "subtopic": "GSP",
+  "type": "原始研究论文",
+  "reason": "有限时间-顶点图信号的子集随机采样与重建。",
+  "summary": "Finite time-vertex graph signals (FTVGS) provide an efficient representation for capturing spatio-temporal correlations across multiple data sources on irregular structures. Although sampling and reconstruction of FTVGS with known spectral support have been extensively studied, the case of unknown spectral support requires further investigation. Existing random sampling methods may extract samples",
+  "summary_basis": "arXiv 摘要（检索日）",
+  "level": "硕士/博士",
+  "difficulty": "中级"
+ },
+ {
+  "arxiv": "2209.07970",
+  "subtopic": "GSP",
+  "type": "原始研究论文",
+  "reason": "IEEE TSP：DAG 上的因果 Fourier。",
+  "summary": "We present a novel form of Fourier analysis, and associated signal processing concepts, for signals (or data) indexed by edge-weighted directed acyclic graphs (DAGs). This means that our Fourier basis yields an eigendecomposition of a suitable notion of shift and convolution operators that we define. DAGs are the common model to capture causal relationships between data values and in this case our",
+  "summary_basis": "arXiv 摘要（检索日）",
+  "level": "硕士/博士",
+  "difficulty": "中级"
+ },
+ {
+  "arxiv": "2307.00336",
+  "subtopic": "GSP",
+  "type": "原始研究论文",
+  "reason": "图信号重建的样本量。",
+  "summary": "Reconstructing a signal on a graph from observations on a subset of the vertices is a fundamental problem in the field of graph signal processing. It is often assumed that adding additional observations to an observation set will reduce the expected reconstruction error. We show that under the setting of noisy observation and least-squares reconstruction this is not always the case, characterising",
+  "summary_basis": "arXiv 摘要（检索日）",
+  "level": "硕士/博士",
+  "difficulty": "中级"
+ },
+ {
+  "arxiv": "2206.00382",
+  "subtopic": "GSP",
+  "type": "原始研究论文",
+  "reason": "随机先验下的图信号采样。",
+  "summary": "We propose a generalized sampling framework for stochastic graph signals. Stochastic graph signals are characterized by graph wide sense stationarity (GWSS) which is an extension of wide sense stationarity (WSS) for standard time-domain signals. In this paper, graph signals are assumed to satisfy the GWSS conditions and we study their sampling as well as recovery procedures. In generalized samplin",
+  "summary_basis": "arXiv 摘要（检索日）",
+  "level": "硕士/博士",
+  "difficulty": "中级"
+ },
+ {
+  "arxiv": "2406.16816",
+  "subtopic": "ST",
+  "type": "原始研究论文",
+  "reason": "图扩散场的随机时空采样与重建。",
+  "reserve": true,
+  "summary": "Reconstructing a signal on a graph from noisy observations of a subset of the vertices is a fundamental problem in the field of graph signal processing. This paper investigates how sample size affects reconstruction error in the presence of noise via an in-depth theoretical analysis of the two most common reconstruction methods in the literature, least-squares reconstruction (LS) and graph-Laplaci",
+  "summary_basis": "arXiv 摘要（检索日）",
+  "level": "硕士/博士",
+  "difficulty": "中级"
+ }
+]

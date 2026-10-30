@@ -1,0 +1,17 @@
+{
+ "status": "verified",
+ "set": "courses",
+ "title": "MIT 6.011 Signals, Systems and Inference (Spring 2018) course pack",
+ "files": [
+  {
+   "path": "courses/MIT_OCW_6_011_SignalsSystemsInference_S2018_en.zip",
+   "url": "https://ocw.mit.edu/courses/6-011-signals-systems-and-inference-spring-2018/6.011-spring-2018.zip",
+   "pdfs": 40,
+   "pdf_pages": 320,
+   "html": 71,
+   "sha256": "c197adb6d60c8887f74105bacefe83534a5d385c122152c351073e143ac1c9fc",
+   "bytes": 23541462
+  }
+ ],
+ "note": "官方压缩包（原样保存），zip 完整性通过，含 465 个文件、40 个 PDF（合计 320 页）全部可解析、71 个 HTML"
+}

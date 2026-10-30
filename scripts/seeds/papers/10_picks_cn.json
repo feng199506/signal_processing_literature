@@ -1,0 +1,46 @@
+[
+ {
+  "arxiv": "2208.06051",
+  "subtopic": "industrial",
+  "type": "原始研究论文",
+  "reason": "滚动轴承状态监测混合方法，附代码。"
+ },
+ {
+  "arxiv": "2206.00390",
+  "subtopic": "industrial",
+  "type": "原始研究论文",
+  "reason": "IEEE TIM：可解释轴承故障诊断。"
+ },
+ {
+  "arxiv": "2509.22267",
+  "subtopic": "industrial",
+  "type": "原始研究论文",
+  "reason": "MSSP：更真实评估轴承模型，避免离线准确率误当在线检测。"
+ },
+ {
+  "arxiv": "2210.12807",
+  "subtopic": "biomedical",
+  "type": "原始研究论文",
+  "reason": "分层 Kalman 自适应 ECG 去噪。"
+ },
+ {
+  "arxiv": "2404.08199",
+  "subtopic": "biomedical",
+  "type": "原始研究论文",
+  "reason": "前额叶 EEG 伪迹检测与去除。"
+ },
+ {
+  "arxiv": "2304.13457",
+  "subtopic": "AE",
+  "type": "原始研究论文",
+  "reason": "MSSP：声发射监测的概率方法。"
+ },
+ {
+  "arxiv": "1611.08024",
+  "subtopic": "biomedical",
+  "type": "原始研究论文",
+  "classic_reason": "EEGNet 紧凑 EEG 网络基线。",
+  "reason": "EEG 分类；不可把离线准确率当实时检测。",
+  "reserve": true
+ }
+]

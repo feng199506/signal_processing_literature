@@ -1,0 +1,76 @@
+[
+ {
+  "arxiv": "1809.07454",
+  "subtopic": "separation",
+  "type": "原始研究论文",
+  "classic_reason": "Conv-TasNet 时域分离标准基线。",
+  "reason": "端到端分离；默认句级离线。",
+  "summary": "Single-channel, speaker-independent speech separation methods have recently seen great progress. However, the accuracy, latency, and computational cost of such methods remain insufficient. The majority of the previous methods have formulated the separation problem through the time-frequency representation of the mixed signal, which has several drawbacks, including the decoupling of the phase and m",
+  "summary_basis": "arXiv 摘要（检索日）",
+  "level": "硕士/博士",
+  "difficulty": "中级"
+ },
+ {
+  "arxiv": "1911.13254",
+  "subtopic": "separation",
+  "type": "原始研究论文",
+  "classic_reason": "Demucs 波形域音乐分离。",
+  "reason": "波形域分离。",
+  "summary": "Source separation for music is the task of isolating contributions, or stems, from different instruments recorded individually and arranged together to form a song. Such components include voice, bass, drums and any other accompaniments.Contrarily to many audio synthesis tasks where the best performances are achieved by models that directly generate the waveform, the state-of-the-art in source sep",
+  "summary_basis": "arXiv 摘要（检索日）",
+  "level": "硕士/博士",
+  "difficulty": "中级"
+ },
+ {
+  "arxiv": "2111.03600",
+  "subtopic": "separation",
+  "type": "原始研究论文",
+  "reason": "Hybrid Demucs：谱+波形源分离。",
+  "summary": "Source separation models either work on the spectrogram or waveform domain. In this work, we show how to perform end-to-end hybrid source separation, letting the model decide which domain is best suited for each source, and even combining both. The proposed hybrid version of the Demucs architecture won the Music Demixing Challenge 2021 organized by Sony. This architecture also comes with additiona",
+  "summary_basis": "arXiv 摘要（检索日）",
+  "level": "硕士/博士",
+  "difficulty": "中级"
+ },
+ {
+  "arxiv": "2505.01338",
+  "subtopic": "enhancement",
+  "type": "原始研究论文",
+  "reason": "ICASSP 2025：远场低延迟去混响该做到何种程度。",
+  "summary": "Dereverberation is an important sub-task of Speech Enhancement (SE) to improve the signal's intelligibility and quality. However, it remains challenging because the reverberation is highly correlated with the signal. Furthermore, the single-channel SE literature has predominantly focused on rooms with short reverb times (typically under 1 second), smaller rooms (under volumes of 1000 cubic meters)",
+  "summary_basis": "arXiv 摘要（检索日）",
+  "level": "硕士/博士",
+  "difficulty": "中级"
+ },
+ {
+  "arxiv": "2201.10800",
+  "subtopic": "separation",
+  "type": "原始研究论文",
+  "reason": "低延迟连续语音分离 SkiM。",
+  "summary": "Continuous speech separation for meeting pre-processing has recently become a focused research topic. Compared to the data in utterance-level speech separation, the meeting-style audio stream lasts longer, has an uncertain number of speakers. We adopt the time-domain speech separation method and the recently proposed Graph-PIT to build a super low-latency online speech separation model, which is v",
+  "summary_basis": "arXiv 摘要（检索日）",
+  "level": "硕士/博士",
+  "difficulty": "中级"
+ },
+ {
+  "arxiv": "1912.10211",
+  "subtopic": "AED",
+  "type": "原始研究论文",
+  "classic_reason": "PANNs 大规模音频预训练，事件检测常用。",
+  "reason": "声学事件检测前端。",
+  "summary": "Audio pattern recognition is an important research topic in the machine learning area, and includes several tasks such as audio tagging, acoustic scene classification, music classification, speech emotion classification and sound event detection. Recently, neural networks have been applied to tackle audio pattern recognition problems. However, previous systems are built on specific datasets with l",
+  "summary_basis": "arXiv 摘要（检索日）",
+  "level": "硕士/博士",
+  "difficulty": "中级"
+ },
+ {
+  "arxiv": "2402.17701",
+  "subtopic": "separation",
+  "type": "原始研究论文",
+  "reason": "实时低延迟混合谱-TasNet 分离。",
+  "reserve": true,
+  "summary": "There have been significant advances in deep learning for music demixing in recent years. However, there has been little attention given to how these neural networks can be adapted for real-time low-latency applications, which could be helpful for hearing aids, remixing audio streams and live shows. In this paper, we investigate the various challenges involved in adapting current demixing models i",
+  "summary_basis": "arXiv 摘要（检索日）",
+  "level": "硕士/博士",
+  "difficulty": "中级"
+ }
+]

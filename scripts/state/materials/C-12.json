@@ -1,0 +1,17 @@
+{
+ "status": "verified",
+ "set": "courses",
+ "title": "MIT RES.6-008 Digital Signal Processing (Oppenheim, Spring 2011) course pack",
+ "files": [
+  {
+   "path": "courses/MIT_OCW_RES_6_008_DigitalSignalProcessing_en.zip",
+   "url": "https://ocw.mit.edu/courses/res-6-008-digital-signal-processing-spring-2011/res.6-008-spring-2011.zip",
+   "pdfs": 81,
+   "pdf_pages": 656,
+   "html": 163,
+   "sha256": "0478cbb18c548f51fd05e35d0f122df5e0b14abbdd1cc958e290da175fb04546",
+   "bytes": 27568388
+  }
+ ],
+ "note": "官方压缩包（原样保存），zip 完整性通过，含 840 个文件、81 个 PDF（合计 656 页）全部可解析、163 个 HTML"
+}

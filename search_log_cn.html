@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"><title>检索日志</title>
+<style>body{font-family:"Microsoft YaHei","PingFang SC","Noto Sans CJK SC",sans-serif;max-width:1100px;margin:2em auto;
+padding:0 1em;line-height:1.6;color:#222}table{border-collapse:collapse;margin:1em 0;font-size:14px}th,td{border:1px solid #ccc;
+padding:4px 8px;vertical-align:top}th{background:#f3f3f3}code{background:#f5f5f5;padding:0 3px}pre{background:#f5f5f5;padding:8px;
+overflow:auto}a{color:#0645ad}.muted{color:#888}.nav{font-size:14px;margin-bottom:1em}</style>
+<script>window.MathJax={tex:{inlineMath:[["\\(","\\)"]],displayMath:[["\\[","\\]"],["$$","$$"]]}};</script>
+<script defer src="_offline_libs/mathjax-3.2.2/es5/tex-mml-chtml.js"></script>
+</head><body>
+<div class="nav"><a href="index_cn.html">← 离线首页 index_cn.html</a></div>
+<h1>检索日志</h1>
+<p>检索日：2026-10-30。五年窗口：2021-10-30 至 2026-10-30。经典论文单列。</p>
+<h2>已有资料库核查</h2>
+<table><thead><tr><th>资料库</th><th>路径</th><th>结果</th></tr></thead><tbody><tr><td>高斯过程文献库</td><td><code>/root/gaussian_process_literature</code></td><td>目录与脚本在，但 <a href="books/"><code>books/</code></a> 原件不在本机。Särkkä 两本改从作者站点新下载并核验，<strong>不计已有复用</strong>。</td></tr><tr><td>近期顶会研究</td><td><code>/root/recent_top_conference_research</code></td><td>存在。论文若命中则按核验复制，不移动原件。本轮论文以 arXiv 新下载为主。</td></tr><tr><td>时间序列 / 概率统计 / 控制 / 机器人 / 编程课程库</td><td><code>/root/time_series_literature</code> 等</td><td>本机无对应文献库目录；仅有 <code>/root/.cache/*_lit</code> 缓存，不把缓存当已核验复用。</td></tr></tbody></table>
+<p>规则：不移动原件、不重复计数；复用项须在本库重新核验。本轮教材/课程/软件/项目均记为新下载。</p>
+<h2>检索渠道</h2>
+<ul><li>论文：arXiv API（<code>eess.SP</code> / <code>eess.AS</code> 及相关标题），五年窗口；经典从 arXiv 旧文或作者页。</li><li>教材：作者站点免费全书、CC/CUP 作者个人使用 PDF、CCRMA HTML 全书、GitHub 代码书。</li><li>课程：MIT OCW 官方 zip 课件包（含讲义 PDF，不含视频）。</li><li>软件：官方 HTML 子集。SciPy 早期条目含页面资源；其后条目保存页面本体。</li><li>项目：GitHub 指定 commit 的 zip 快照；丢弃权重、大型二进制与部分音频。</li></ul>
+<p>不绕过付费墙；不下载商业软件本体、破解工具或付费手册。</p>
+<h2>子方向论文</h2>
+<p>按 <a href="scripts/seeds/queries/"><code>scripts/seeds/queries/</code></a> 检索，种子在 <a href="scripts/seeds/papers/"><code>scripts/seeds/papers/</code></a>。核验：<code>%PDF-</code>、pypdf、页数/字数、题名与第一作者姓、参考文献节（含分散字母的 REFERENCES）。</p>
+<p>失败摘录（详见 <a href="download_failures_cn.csv"><code>download_failures_cn.csv</code></a>）：</p>
+<ul><li>02：短文/404/页数不足（如 2407.06502、2505.23718、2210.15635）。</li><li>05：Kalman 1960 历史 PDF 链接 404。</li><li>11：一篇与 06 重复，未双计。</li></ul>
+<h2>教材与课程</h2>
+<ul><li>HTML 全书用目录镜像（wget -r -np -l 1），音频安装包排除。</li><li>MIT OCW 现行为课程 zip，而非旧版 <code>static_resources/</code> 散列 PDF。</li><li>C-05 Stanford SEE、C-06 sp4comm 站点不计入大学课程名额（<code>exclude</code>）。</li><li>新增 C-13 MIT 18.327、C-14 MIT 6.450，使课程核验达到 10 套。</li></ul>
+<h2>软件与项目</h2>
+<ul><li>librosa 文档改用 0.11.0 路径（<code>latest/core.html</code> 404）。</li><li>GNU Radio wiki 对本 UA 403，改官方 Doxygen。</li><li>MATLAB 公开文档 403/404，S-13 失败，不计入。</li><li>NeuroKit2 归档 362 MiB 超限，P-12 失败；生物信号以 WFDB + MNE 文档为准。</li><li>SciPy 全库过大，P-19 仅保留 <code>scipy/signal</code> 与 <code>scipy/fft</code>。</li></ul>
+<h2>断点续跑</h2>
+<p>见 <a href="README_cn.html"><code>README_cn.md</code></a>。状态：<a href="scripts/state/papers/"><code>scripts/state/papers/</code></a>、<a href="scripts/state/materials/"><code>scripts/state/materials/</code></a>。缓存：<code>/root/.cache/spl_lit/</code>。</p>
+</body></html>

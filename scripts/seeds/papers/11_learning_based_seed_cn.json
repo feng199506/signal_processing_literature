@@ -1,0 +1,74 @@
+[
+ {
+  "arxiv": "1912.10557",
+  "subtopic": "unrolling",
+  "type": "综述",
+  "classic_reason": "算法展开 IEEE SPM 综述。",
+  "reason": "可学习迭代与物理模型融合总览。",
+  "summary": "Deep neural networks provide unprecedented performance gains in many real world problems in signal and image processing. Despite these gains, future development and practical deployment of deep networks is hindered by their blackbox nature, i.e., lack of interpretability, and by the need for very large training sets. An emerging technique called algorithm unrolling or unfolding offers promise in e",
+  "summary_basis": "arXiv 摘要（检索日）",
+  "level": "硕士/博士",
+  "difficulty": "中级"
+ },
+ {
+  "arxiv": "2204.07402",
+  "subtopic": "ssl",
+  "type": "原始研究论文",
+  "reason": "TASLP：BYOL for Audio。",
+  "summary": "Pre-trained models are essential as feature extractors in modern machine learning systems in various domains. In this study, we hypothesize that representations effective for general audio tasks should provide multiple aspects of robust features of the input sound. For recognizing sounds regardless of perturbations such as varying pitch or timbre, features should be robust to these perturbations. ",
+  "summary_basis": "arXiv 摘要（检索日）",
+  "level": "硕士/博士",
+  "difficulty": "中级"
+ },
+ {
+  "arxiv": "2512.03637",
+  "subtopic": "ssl",
+  "type": "原始研究论文",
+  "reason": "混叠感知音频谱 Transformer 自监督预训练。",
+  "summary": "Transformer-based audio self-supervised learning (SSL) models commonly use spectrograms, vision-style Transformers, and masked modeling objectives. However, convolutional patchification with temporal downsampling lowers the effective Nyquist frequency and introduces aliasing, while naïve low-pass filtering may remove task-relevant high-frequency cues. We present AaSP, an aliasing-aware self-superv",
+  "summary_basis": "arXiv 摘要（检索日）",
+  "level": "硕士/博士",
+  "difficulty": "中级"
+ },
+ {
+  "arxiv": "2601.19297",
+  "subtopic": "physics",
+  "type": "原始研究论文",
+  "reason": "相位检索物理信息网络重建声场。",
+  "summary": "We propose a method for estimating the magnitude distribution of an acoustic field from spatially sparse magnitude measurements. Such a method is useful when phase measurements are unreliable or inaccessible. Physics-informed neural networks (PINNs) have shown promise for sound field estimation by incorporating constraints derived from governing partial differential equations (PDEs) into neural ne",
+  "summary_basis": "arXiv 摘要（检索日）",
+  "level": "硕士/博士",
+  "difficulty": "中级"
+ },
+ {
+  "arxiv": "2505.07560",
+  "subtopic": "physics",
+  "type": "原始研究论文",
+  "reason": "物理信息拓扑信号处理用于管网。",
+  "summary": "Water management is one of the most critical aspects of our society, together with population increase and climate change. Water scarcity requires a better characterization and monitoring of Water Distribution Networks (WDNs). This paper presents a novel framework for monitoring Water Distribution Networks (WDNs) by integrating physics-informed modeling of the nonlinear interactions between pressu",
+  "summary_basis": "arXiv 摘要（检索日）",
+  "level": "硕士/博士",
+  "difficulty": "中级"
+ },
+ {
+  "arxiv": "2610.11359",
+  "subtopic": "unrolling",
+  "type": "原始研究论文",
+  "reason": "展开的时变图信号恢复。",
+  "summary": "In this paper, we propose restoration methods for time-varying graph signals using deep algorithm unrolling (DAU). Time-varying graph signals, such as signals obtained from sensor networks, are nonuniformly distributed in space and observed as time series. Since these observed signals often contain noise and missing values, their restoration needs to consider both spatial and temporal relationship",
+  "summary_basis": "arXiv 摘要（检索日）",
+  "level": "硕士/博士",
+  "difficulty": "中级"
+ },
+ {
+  "arxiv": "2505.22175",
+  "subtopic": "unrolling",
+  "type": "原始研究论文",
+  "reason": "多模态图信号去噪展开。",
+  "reserve": true,
+  "summary": "We propose a denoising method for multimodal graph signals by an alternating minimization scheme that sequentially solves signal restoration and graph learning problems. Many complex-structured data, i.e., those on sensor networks, can capture multiple modalities at each measurement point, referred to as modalities. They are also assumed to have an underlying structure or correlations in modality ",
+  "summary_basis": "arXiv 摘要（检索日）",
+  "level": "硕士/博士",
+  "difficulty": "中级"
+ }
+]

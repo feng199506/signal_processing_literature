@@ -1,0 +1,17 @@
+{
+ "status": "verified",
+ "set": "courses",
+ "title": "MIT RES.6-007 Signals and Systems (Oppenheim, Spring 2011) course pack",
+ "files": [
+  {
+   "path": "courses/MIT_OCW_RES_6_007_Oppenheim_SignalsSystems_en.zip",
+   "url": "https://ocw.mit.edu/courses/res-6-007-signals-and-systems-spring-2011/res.6-007-spring-2011.zip",
+   "pdfs": 128,
+   "pdf_pages": 1507,
+   "html": 224,
+   "sha256": "a8092055921c4df6a96f47bbc4e84ef18905a63c90fd49535310d9560472d851",
+   "bytes": 51942563
+  }
+ ],
+ "note": "官方压缩包（原样保存），zip 完整性通过，含 1082 个文件、128 个 PDF（合计 1507 页）全部可解析、224 个 HTML"
+}

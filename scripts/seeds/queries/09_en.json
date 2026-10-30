@@ -1,0 +1,6 @@
+[
+  {"q": "cat:eess.AS AND (\"speech enhancement\" OR dereverberation OR \"noise reduction\")", "subtopic": "enhancement"},
+  {"q": "cat:eess.AS AND (\"source separation\" OR \"speech separation\" OR demucs OR TasNet)", "subtopic": "separation"},
+  {"q": "cat:eess.AS AND (\"acoustic event\" OR \"sound event\" OR \"audio tagging\")", "subtopic": "AED"},
+  {"q": "(ti:survey OR ti:review OR ti:tutorial) AND (\"speech enhancement\" OR \"audio source separation\" OR \"acoustic measurement\")", "subtopic": "survey"}
+]

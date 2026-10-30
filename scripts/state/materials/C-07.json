@@ -1,0 +1,17 @@
+{
+ "status": "verified",
+ "set": "courses",
+ "title": "MIT 6.02 Introduction to EECS II: Digital Communication Systems (Fall 2012) course pack",
+ "files": [
+  {
+   "path": "courses/MIT_OCW_6_02_DigitalCommunication_F2012_en.zip",
+   "url": "https://ocw.mit.edu/courses/6-02-introduction-to-eecs-ii-digital-communication-systems-fall-2012/6.02-fall-2012.zip",
+   "pdfs": 101,
+   "pdf_pages": 1798,
+   "html": 207,
+   "sha256": "fac7f5e6aecee3992fbbad57b6991889d7c1a2dc0ccf6d9a4a7e81c9d2efe095",
+   "bytes": 68361705
+  }
+ ],
+ "note": "官方压缩包（原样保存），zip 完整性通过，含 1006 个文件、101 个 PDF（合计 1798 页）全部可解析、207 个 HTML"
+}

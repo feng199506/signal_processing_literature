@@ -1,0 +1,45 @@
+[
+ {
+  "arxiv": "2204.09911",
+  "subtopic": "realtime",
+  "type": "原始研究论文",
+  "reason": "TASLP：极低算法延迟 STFT 域语音增强。"
+ },
+ {
+  "arxiv": "2610.24622",
+  "subtopic": "embedded",
+  "type": "原始研究论文",
+  "reason": "可微 DSP 从训练 GPU 到实时边缘。"
+ },
+ {
+  "arxiv": "2504.08624",
+  "subtopic": "realtime",
+  "type": "原始研究论文",
+  "reason": "TorchFX：PyTorch/GPU 音频 DSP。"
+ },
+ {
+  "arxiv": "2401.17544",
+  "subtopic": "embedded",
+  "type": "原始研究论文",
+  "reason": "FPGA 可训练定点量化。"
+ },
+ {
+  "arxiv": "2203.11028",
+  "subtopic": "embedded",
+  "type": "原始研究论文",
+  "reason": "FPGA DSP 块低精度打包。"
+ },
+ {
+  "arxiv": "2607.23763",
+  "subtopic": "realtime",
+  "type": "原始研究论文",
+  "reason": "多核 CPU/GPU 并行级联递归滤波。"
+ },
+ {
+  "arxiv": "2510.25693",
+  "subtopic": "realtime",
+  "type": "原始研究论文",
+  "reason": "PyDPF 可微粒子滤波 Python 包。",
+  "reserve": true
+ }
+]

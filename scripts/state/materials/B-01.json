@@ -1,0 +1,15 @@
+{
+ "status": "verified",
+ "set": "books",
+ "title": "Foundations of Signal Processing",
+ "files": [
+  {
+   "path": "books/VetterliKovacevicGoyal_FoundationsSignalProcessing_2014_en.pdf",
+   "url": "https://www.fourierandwavelets.org/FSP_v1.1_2014.pdf",
+   "pages": 677,
+   "sha256": "264e834000cc67ebfc08c1cfb817bbdce3be70976b874c5d1ab5eb251da15c42",
+   "bytes": 13146821
+  }
+ ],
+ "note": "HTTP 200；%PDF；pypdf 可解析 677 页；名称短语已见"
+}

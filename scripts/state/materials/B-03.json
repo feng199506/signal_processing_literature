@@ -1,0 +1,15 @@
+{
+ "status": "verified",
+ "set": "books",
+ "title": "Signal Processing for Communications",
+ "files": [
+  {
+   "path": "books/PrandoniVetterli_SignalProcessingForCommunications_2008_en.pdf",
+   "url": "https://www.sp4comm.org/docs/sp4comm_corrected.pdf",
+   "pages": 388,
+   "sha256": "aa427b624a826089fc5509e5a28a09eb4d14e7fc8c2a118aa3b4ab042b754fc4",
+   "bytes": 4276622
+  }
+ ],
+ "note": "HTTP 200；%PDF；pypdf 可解析 388 页；名称短语已见"
+}

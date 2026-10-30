@@ -1,0 +1,26 @@
+[
+ {
+  "arxiv": "2111.10765",
+  "subtopic": "sampling",
+  "type": "原始研究论文",
+  "reason": "IEEE TSP：宽带时变信道的正交延迟尺度空间调制。"
+ },
+ {
+  "arxiv": "2207.13230",
+  "subtopic": "sampling",
+  "type": "原始研究论文",
+  "reason": "IEEE SPL：无限幅度采样与稀疏超分辨及硬件验证。"
+ },
+ {
+  "arxiv": "2404.18850",
+  "subtopic": "sampling",
+  "type": "原始研究论文",
+  "reason": "IEEE SPL：分数 Fourier 域稀疏采样的恢复保证与 CRLB。"
+ },
+ {
+  "arxiv": "2303.01927",
+  "subtopic": "sampling",
+  "type": "原始研究论文",
+  "reason": "用 Koopman 算子给出广义 Nyquist-Shannon 采样定理。"
+ }
+]

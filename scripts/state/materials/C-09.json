@@ -1,0 +1,17 @@
+{
+ "status": "verified",
+ "set": "courses",
+ "title": "MIT HST.582J Biomedical Signal and Image Processing (Spring 2007) course pack",
+ "files": [
+  {
+   "path": "courses/MIT_OCW_HST_582J_BiomedicalSP_en.zip",
+   "url": "https://ocw.mit.edu/courses/hst-582j-biomedical-signal-and-image-processing-spring-2007/hst.582j-spring-2007.zip",
+   "pdfs": 40,
+   "pdf_pages": 1043,
+   "html": 67,
+   "sha256": "db3de8bdb7ceccf29d24d233e63faa3e42a4a7d4eee781f4a69307401d0c433c",
+   "bytes": 35835296
+  }
+ ],
+ "note": "官方压缩包（原样保存），zip 完整性通过，含 453 个文件、40 个 PDF（合计 1043 页）全部可解析、67 个 HTML"
+}

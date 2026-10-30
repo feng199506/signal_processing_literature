@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"><title>信号处理资源库</title>
+<style>body{font-family:"Microsoft YaHei","PingFang SC","Noto Sans CJK SC",sans-serif;max-width:1100px;margin:2em auto;
+padding:0 1em;line-height:1.6;color:#222}table{border-collapse:collapse;margin:1em 0;font-size:14px}th,td{border:1px solid #ccc;
+padding:4px 8px;vertical-align:top}th{background:#f3f3f3}code{background:#f5f5f5;padding:0 3px}pre{background:#f5f5f5;padding:8px;
+overflow:auto}a{color:#0645ad}.muted{color:#888}.nav{font-size:14px;margin-bottom:1em}</style>
+<script>window.MathJax={tex:{inlineMath:[["\\(","\\)"]],displayMath:[["\\[","\\]"],["$$","$$"]]}};</script>
+<script defer src="_offline_libs/mathjax-3.2.2/es5/tex-mml-chtml.js"></script>
+</head><body>
+<div class="nav"><a href="index_cn.html">← 离线首页 index_cn.html</a></div>
+<h1>信号处理资源库</h1>
+<p>独立目录：<code>/root/signal_processing_literature/</code>。覆盖本科信号与系统到研究生专题、应用与工程部署。检索日 <strong>2026-10-30</strong>；论文五年窗口 <strong>2021-10-30 至 2026-10-30</strong>，必要经典单列。</p>
+<p>本轮只收集整理：不安装依赖、不运行实验、不连接采集设备、不部署、不上传 GitHub、不删除资料。</p>
+<h2>子方向</h2>
+<table><thead><tr><th>目录</th><th>内容</th></tr></thead><tbody><tr><td><a href="01_signals_systems/"><code>01_signals_systems/</code></a></td><td>连续/离散、LTI、卷积、变换、频率响应、采样重建</td></tr><tr><td><a href="02_digital_signal_processing/"><code>02_digital_signal_processing/</code></a></td><td>DFT/FFT、FIR/IIR、多采样率、量化与定点</td></tr><tr><td><a href="03_statistical_signal_processing/"><code>03_statistical_signal_processing/</code></a></td><td>随机信号、谱估计、检测与估计</td></tr><tr><td><a href="04_time_frequency/"><code>04_time_frequency/</code></a></td><td>STFT、小波、多分辨率、非平稳</td></tr><tr><td><a href="05_adaptive_filtering_estimation/"><code>05_adaptive_filtering_estimation/</code></a></td><td>Wiener、LMS/RLS、Kalman 族、粒子滤波、平滑</td></tr><tr><td><a href="06_inverse_sparse_methods/"><code>06_inverse_sparse_methods/</code></a></td><td>逆问题、正则化、稀疏、压缩感知</td></tr><tr><td><a href="07_arrays_sensor_fusion/"><code>07_arrays_sensor_fusion/</code></a></td><td>阵列、波束、DOA、多传感器融合</td></tr><tr><td><a href="08_graph_spatiotemporal/"><code>08_graph_spatiotemporal/</code></a></td><td>图信号、图滤波/采样、时空</td></tr><tr><td><a href="09_audio_speech/"><code>09_audio_speech/</code></a></td><td>语音音频特征、增强、分离、事件</td></tr><tr><td><a href="10_industrial_biomedical/"><code>10_industrial_biomedical/</code></a></td><td>振动/电流/声发射与 ECG/EEG 等</td></tr><tr><td><a href="11_learning_based/"><code>11_learning_based/</code></a></td><td>可学习滤波、展开、物理+数据</td></tr><tr><td><a href="12_realtime_implementation/"><code>12_realtime_implementation/</code></a></td><td>流式、延迟、精度、嵌入式/GPU</td></tr></tbody></table>
+<p>论文在各目录 <code>papers/</code>。教材、课程、软件文档、项目分别在 <a href="books/"><code>books/</code></a>、<a href="courses/"><code>courses/</code></a>、<a href="software_docs/"><code>software_docs/</code></a>、<a href="projects/"><code>projects/</code></a>。</p>
+<h2>登记文件</h2>
+<ul><li><a href="catalog_cn.csv"><code>catalog_cn.csv</code></a> 已核验条目</li><li><a href="progress_cn.csv"><code>progress_cn.csv</code></a> 分方向进度</li><li><a href="download_failures_cn.csv"><code>download_failures_cn.csv</code></a> 失败与待核验</li><li><a href="project_readiness_cn.csv"><code>project_readiness_cn.csv</code></a> 代码 L0/L1（本轮不执行）</li><li><a href="search_log_cn.html"><code>search_log_cn.md</code></a> 检索与复用说明</li><li><a href="guides/"><code>guides/</code></a> 学习与工程路线（中文）</li></ul>
+<p>独立自建文件在扩展名前标 <code>_cn</code> 或 <code>_en</code>。上游源码内部文件名保持原样。</p>
+<h2>学习路线</h2>
+<ul><li><a href="guides/foundations_path_cn.html"><code>guides/foundations_path_cn.md</code></a></li><li><a href="guides/statistical_signal_processing_path_cn.html"><code>guides/statistical_signal_processing_path_cn.md</code></a></li><li><a href="guides/time_frequency_path_cn.html"><code>guides/time_frequency_path_cn.md</code></a></li><li><a href="guides/industrial_applications_path_cn.html"><code>guides/industrial_applications_path_cn.md</code></a></li><li><a href="guides/software_map_cn.html"><code>guides/software_map_cn.md</code></a></li><li><a href="guides/realtime_deployment_cn.html"><code>guides/realtime_deployment_cn.md</code></a></li><li><a href="guides/practice_index_cn.html"><code>guides/practice_index_cn.md</code></a></li><li><a href="guides/core_reading_list_cn.html"><code>guides/core_reading_list_cn.md</code></a></li></ul>
+<h2>完整性规则（摘要）</h2>
+<p>只计核验通过的完整资料。PDF 须可解析且正文完整。摘要/试读/残章不计。课程按完整资料包计。HTML 保存为离线页并记录范围。源码保留结构、许可证、SNAPSHOT（含 commit）。不下载大数据集、模型权重、安装包。不绕过付费墙。</p>
+<h2>断点续跑</h2>
+<pre><code>cd /root/signal_processing_literature
+python3 -I scripts/materials_en.py status
+python3 -I scripts/papers_en.py status
+python3 -I scripts/materials_en.py fetch books --retry-failed
+python3 -I scripts/materials_en.py fetch courses --retry-failed
+python3 -I scripts/materials_en.py fetch software --retry-failed
+python3 -I scripts/materials_en.py fetch projects --retry-failed
+python3 -I scripts/papers_en.py download NN --retry-failed   # NN = 01..12
+python3 -I scripts/build_catalog_en.py</code></pre>
+<p>已核验条目不会覆盖。工作缓存：<code>/root/.cache/spl_lit/</code>。arXiv 与兄弟文献库共享 <code>arxiv.org</code> 锁。</p>
+<h2>代码等级</h2>
+<ul><li><strong>L0</strong>：已下载快照。</li><li><strong>L1</strong>：静态见到 README/依赖清单/SNAPSHOT 等入口。</li><li>本轮不运行，不声称复现或实时性能。</li></ul>
+</body></html>

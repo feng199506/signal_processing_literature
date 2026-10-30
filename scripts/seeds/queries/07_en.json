@@ -1,0 +1,6 @@
+[
+  {"q": "cat:eess.SP AND (beamforming OR \"direction of arrival\" OR DOA OR MUSIC OR ESPRIT OR MVDR)", "subtopic": "DOA"},
+  {"q": "(\"array signal processing\" OR \"sensor array\" OR \"microphone array\") AND (calibration OR localization OR beamforming)", "subtopic": "arrays"},
+  {"q": "(\"sensor fusion\" OR \"multi-sensor\") AND (Kalman OR tracking OR synchronization)", "subtopic": "fusion"},
+  {"q": "(ti:survey OR ti:review OR ti:tutorial) AND (beamforming OR DOA OR \"array processing\" OR \"sensor fusion\")", "subtopic": "survey"}
+]

@@ -1,0 +1,46 @@
+[
+ {
+  "arxiv": "1912.10557",
+  "subtopic": "unrolling",
+  "type": "综述",
+  "classic_reason": "算法展开 IEEE SPM 综述。",
+  "reason": "可学习迭代与物理模型融合总览。"
+ },
+ {
+  "arxiv": "2204.07402",
+  "subtopic": "ssl",
+  "type": "原始研究论文",
+  "reason": "TASLP：BYOL for Audio。"
+ },
+ {
+  "arxiv": "2512.03637",
+  "subtopic": "ssl",
+  "type": "原始研究论文",
+  "reason": "混叠感知音频谱 Transformer 自监督预训练。"
+ },
+ {
+  "arxiv": "2601.19297",
+  "subtopic": "physics",
+  "type": "原始研究论文",
+  "reason": "相位检索物理信息网络重建声场。"
+ },
+ {
+  "arxiv": "2505.07560",
+  "subtopic": "physics",
+  "type": "原始研究论文",
+  "reason": "物理信息拓扑信号处理用于管网。"
+ },
+ {
+  "arxiv": "2610.11359",
+  "subtopic": "unrolling",
+  "type": "原始研究论文",
+  "reason": "展开的时变图信号恢复。"
+ },
+ {
+  "arxiv": "2505.22175",
+  "subtopic": "unrolling",
+  "type": "原始研究论文",
+  "reason": "多模态图信号去噪展开。",
+  "reserve": true
+ }
+]

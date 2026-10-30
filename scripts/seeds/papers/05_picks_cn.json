@@ -1,0 +1,61 @@
+[
+ {
+  "arxiv": "2107.10043",
+  "subtopic": "learned filters",
+  "type": "原始研究论文",
+  "reason": "KalmanNet：神经网络辅助 Kalman 滤波。"
+ },
+ {
+  "arxiv": "2304.07827",
+  "subtopic": "learned filters",
+  "type": "原始研究论文",
+  "reason": "Latent-KalmanNet：高维信号跟踪。"
+ },
+ {
+  "arxiv": "2302.09639",
+  "subtopic": "Kalman-PF",
+  "type": "综述",
+  "reason": "可微粒子滤波综述，数据自适应序贯贝叶斯。"
+ },
+ {
+  "arxiv": "2204.11942",
+  "subtopic": "adaptive",
+  "type": "原始研究论文",
+  "reason": "Meta-AF：自适应滤波的元学习。"
+ },
+ {
+  "arxiv": "2506.00403",
+  "subtopic": "adaptive",
+  "type": "原始研究论文",
+  "reason": "图信号估计中 LMS/RLS 暂态误差分析。"
+ },
+ {
+  "arxiv": "2201.01539",
+  "subtopic": "Kalman-PF",
+  "type": "原始研究论文",
+  "reason": "逆扩展 Kalman 滤波基础。"
+ },
+ {
+  "arxiv": "2301.00291",
+  "subtopic": "adaptive",
+  "type": "原始研究论文",
+  "reason": "泛函 Wiener 滤波器。"
+ },
+ {
+  "pdf_url": "https://www.cs.unc.edu/~welch/kalman/media/pdf/Kalman1960.pdf",
+  "title": "A New Approach to Linear Filtering and Prediction Problems",
+  "authors": [
+   "R. E. Kalman"
+  ],
+  "date": "1960-03-01",
+  "date_basis": "ASME 1960（UNC 镜像）",
+  "venue": "Journal of Basic Engineering",
+  "landing": "https://www.cs.unc.edu/~welch/kalman/kalmanPaper.html",
+  "subtopic": "Kalman-PF",
+  "type": "原始研究论文",
+  "classic_reason": "Kalman 滤波原文。",
+  "reason": "线性高斯递推估计的原始文献；滤波而非平滑。",
+  "summary": "提出离散线性滤波与预测递推解。",
+  "summary_basis": "论文标题"
+ }
+]

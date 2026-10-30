@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"><title>时频与小波路线</title>
+<style>body{font-family:"Microsoft YaHei","PingFang SC","Noto Sans CJK SC",sans-serif;max-width:1100px;margin:2em auto;
+padding:0 1em;line-height:1.6;color:#222}table{border-collapse:collapse;margin:1em 0;font-size:14px}th,td{border:1px solid #ccc;
+padding:4px 8px;vertical-align:top}th{background:#f3f3f3}code{background:#f5f5f5;padding:0 3px}pre{background:#f5f5f5;padding:8px;
+overflow:auto}a{color:#0645ad}.muted{color:#888}.nav{font-size:14px;margin-bottom:1em}</style>
+<script>window.MathJax={tex:{inlineMath:[["\\(","\\)"]],displayMath:[["\\[","\\]"],["$$","$$"]]}};</script>
+<script defer src="../_offline_libs/mathjax-3.2.2/es5/tex-mml-chtml.js"></script>
+</head><body>
+<div class="nav"><a href="../index_cn.html">← 离线首页 index_cn.html</a></div>
+<h1>时频与小波路线</h1>
+<p>对应 <a href="../04_time_frequency/"><code>04_time_frequency/</code></a>，并交叉 <code>02</code> 的分帧/窗与 <code>09</code> 的音频 STFT。重点记录每种分解的假设和限制。本轮不运行代码。</p>
+<h2>先修</h2>
+<p>DFT、窗函数、线性滤波。B-01 后半与 B-02。</p>
+<h2>读法</h2>
+<ol><li><strong>STFT 与分帧</strong>   教材：Julius Smith《Spectral Audio Signal Processing》<a href="../books/Smith_SpectralAudioSignalProcessing_html_en/~jos/sasp/sasp.html"><code>books/Smith_SpectralAudioSignalProcessing_html_en/</code></a>（B-12）。 文档：SciPy <code>stft</code> 页、<a href="../software_docs/librosa_docs_html_en/librosa.org/doc/0.11.0/index.html"><code>software_docs/librosa_docs_html_en/</code></a>（0.11.0：<code>core.html</code>、<code>librosa.stft</code> / <code>istft</code>）。 源码：<a href="../projects/librosa_src_en/"><code>projects/librosa_src_en/</code></a>（commit <code>4ffed287f904</code>）。 近五年：<a href="../04_time_frequency/papers/2022_Pascal_CovariantDiscreteTimeFrequency_en.pdf"><code>04_time_frequency/papers/2022_Pascal_CovariantDiscreteTimeFrequency_en.pdf</code></a>、<code>2023_Leiber_DifferentiableAdaptiveShortTime_en.pdf</code>。 限制：窗长决定时间/频率折中；中心窗 STFT 默认非因果；hop 与 COLA 不满足则 ISTFT 不能完美重建。</li></ol>
+<ol><li><strong>小波、多分辨率、滤波器组</strong>   教材：<a href="../books/VetterliKovacevicGoyal_FourierWaveletSignalProcessing_2013_en.pdf"><code>books/VetterliKovacevicGoyal_FourierWaveletSignalProcessing_2013_en.pdf</code></a>（B-02）。 课程：<a href="../courses/MIT_OCW_18_327_WaveletsFilterBanks_S2003_en.zip"><code>courses/MIT_OCW_18_327_WaveletsFilterBanks_S2003_en.zip</code></a>（C-13）。 文档/源码：<a href="../software_docs/PyWavelets_docs_html_en/pywavelets.readthedocs.io/en/latest/index.html"><code>software_docs/PyWavelets_docs_html_en/</code></a>、<a href="../projects/PyWavelets_src_en/"><code>projects/PyWavelets_src_en/</code></a>（commit <code>c9b542b2d2c3</code>）。 限制：离散小波通常假设有限长度信号加边界延拓；延拓方式改变端点系数。实时间小波可用因果滤波器组，但与离线对称延拓的系数不同。</li></ol>
+<ol><li><strong>同步压缩与瞬态</strong>   经典：<a href="../04_time_frequency/papers/2009_Daubechies_SynchrosqueezedWaveletTransforms_en.pdf"><code>04_time_frequency/papers/2009_Daubechies_SynchrosqueezedWaveletTransforms_en.pdf</code></a>。 实现：<a href="../projects/ssqueezepy_src_en/"><code>projects/ssqueezepy_src_en/</code></a>（commit <code>adf76ac19303</code>）。 限制：同步压缩假设分量在时频面上可分离；交叉与强噪声下再分配会伪影。整段 CWT 是离线的。</li></ol>
+<ol><li><strong>散射与稳定时频表示</strong>   经典：<code>2011_Mallat_GroupInvariantScattering_en.pdf</code>、<code>2013_Anden_DeepScatteringSpectrum_en.pdf</code>。 限制：散射对小形变稳定，但丢失一部分可逆相位；不宜当作通用去噪器。</li></ol>
+<ol><li><strong>经验模态等自适应分解</strong>   实现：<a href="../projects/PyEMD_src_en/"><code>projects/PyEMD_src_en/</code></a>（commit <code>e8ea44f6d577</code>）。 <strong>硬限制</strong>：EMD/EEMD 是离线、非因果分解，依赖整段包络插值。工业振动里常见，但不得把 IMF 当作在线故障检测输出。见 Vieira 2025 对评估泄漏的讨论（<a href="../10_industrial_biomedical/papers/"><code>10_industrial_biomedical/papers/</code></a>）。</li></ol>
+<ol><li><strong>计算</strong>   <a href="../04_time_frequency/papers/2026_Franchino_ExactFactorisationFastComputation_en.pdf"><code>04_time_frequency/papers/2026_Franchino_ExactFactorisationFastComputation_en.pdf</code></a>。实时分帧见 <a href="realtime_deployment_cn.html"><code>guides/realtime_deployment_cn.md</code></a>。</li></ol>
+<h2>分帧清单（写进案例记录）</h2>
+<ul><li>采样率、窗长、hop、窗型、是否中心对齐。</li><li>频谱泄漏与幅值归一化（窗和 / 窗能量 / PSD 标定）。</li><li>边界帧：是否填充、填充是否用到未来样本。</li><li>COLA 与 ISTFT 误差。</li><li>若任务是在线检测：只能使用已到达样本的因果窗；延迟 ≥ 窗长的一半（中心窗）或整窗（右对齐因果窗）。</li></ul>
+</body></html>

@@ -1,0 +1,50 @@
+[
+ {
+  "arxiv": "2508.11675",
+  "subtopic": "survey",
+  "type": "学术教程",
+  "reason": "DOA 估计经典与现代方法教程综述（44 页）。"
+ },
+ {
+  "arxiv": "2501.02746",
+  "subtopic": "DOA",
+  "type": "原始研究论文",
+  "reason": "IEEE TSP：ESPRIT DoA 的大维分析与修正。"
+ },
+ {
+  "arxiv": "2210.15012",
+  "subtopic": "survey",
+  "type": "综述",
+  "reason": "阵列信号处理又三个十年：优化与结构。"
+ },
+ {
+  "arxiv": "2201.03457",
+  "subtopic": "DOA",
+  "type": "原始研究论文",
+  "reason": "ESPRIT 与空间平滑 ESPRIT 的非渐近性能。"
+ },
+ {
+  "arxiv": "2411.15144",
+  "subtopic": "DOA",
+  "type": "原始研究论文",
+  "reason": "未标定阵列上物理参数化可微 MUSIC。"
+ },
+ {
+  "arxiv": "2502.05016",
+  "subtopic": "DOA",
+  "type": "原始研究论文",
+  "reason": "模型失配对 MUSIC 的影响：近场与远场。"
+ },
+ {
+  "arxiv": "2510.14802",
+  "subtopic": "arrays",
+  "type": "原始研究论文",
+  "reason": "天线数线性复杂度的可扩展 MVDR。"
+ },
+ {
+  "arxiv": "2306.08514",
+  "subtopic": "arrays",
+  "type": "原始研究论文",
+  "reason": "TASLP：低秩稀疏插值的 SRP 波束功率图。"
+ }
+]

@@ -1,0 +1,20 @@
+{
+ "status": "verified",
+ "set": "projects",
+ "title": "deepinv deep inverse-problem library",
+ "files": [
+  {
+   "path": "projects/deepinv_src_en",
+   "url": "https://github.com/deepinv/deepinv",
+   "commit": "ea2c1313f4c71503fdb683d2177e3ad3d4b93360",
+   "files": 489,
+   "archive_sha256": "7045858409ef2b99f7787e12da5376c021cd86c654b890f14e94b3fd7d376455",
+   "bytes": 7686096
+  }
+ ],
+ "commit": "ea2c1313f4c71503fdb683d2177e3ad3d4b93360",
+ "license_files": [
+  "LICENSE"
+ ],
+ "note": "官方仓库快照 commit ea2c1313f4c7：归档 zip 完整性通过，解压 489 个文件（0 个 notebook）；应有文件已见 ['deepinv/', 'LICENSE']；许可证文件 ['LICENSE']；未发现 LFS 指针文件"
+}

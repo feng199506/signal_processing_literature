@@ -1,0 +1,20 @@
+{
+ "status": "verified",
+ "set": "projects",
+ "title": "SciPy signal and fft source subset",
+ "files": [
+  {
+   "path": "projects/scipy_signal_subset_en",
+   "url": "https://github.com/scipy/scipy",
+   "commit": "7490ad2d980f796d5325b19ea45ebaa06021359f",
+   "files": 137,
+   "archive_sha256": "a99884322f6766904433492f9c6aa619f676b2c01546af66369959ee5a616764",
+   "bytes": 26777454
+  }
+ ],
+ "commit": "7490ad2d980f796d5325b19ea45ebaa06021359f",
+ "license_files": [
+  "LICENSE.txt"
+ ],
+ "note": "官方仓库快照 commit 7490ad2d980f：归档 zip 完整性通过，解压 137 个文件（0 个 notebook）；应有文件已见 ['scipy/signal/', 'LICENSE.txt']；仅保留路径 ['scipy/signal/', 'scipy/fft/', 'LICENSE.txt', 'README.md', 'scipy/fftpack/']；许可证文件 ['LICENSE.txt']；未发现 LFS 指针文件"
+}

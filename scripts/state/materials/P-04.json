@@ -1,0 +1,20 @@
+{
+ "status": "verified",
+ "set": "projects",
+ "title": "librosa source snapshot (audio examples dropped if large binary)",
+ "files": [
+  {
+   "path": "projects/librosa_src_en",
+   "url": "https://github.com/librosa/librosa",
+   "commit": "4ffed287f9044654cc4a1a7393f895cd716a0a5d",
+   "files": 278,
+   "archive_sha256": "5fcbb595cb9878314488e6063c7d34193cdc77390a942b1c4cf92eb0cbc4f26a",
+   "bytes": 4152483
+  }
+ ],
+ "commit": "4ffed287f9044654cc4a1a7393f895cd716a0a5d",
+ "license_files": [
+  "LICENSE.md"
+ ],
+ "note": "官方仓库快照 commit 4ffed287f904：归档 zip 完整性通过，解压 278 个文件（0 个 notebook）；应有文件已见 ['librosa/', 'LICENSE.md']；许可证文件 ['LICENSE.md']；未发现 LFS 指针文件"
+}

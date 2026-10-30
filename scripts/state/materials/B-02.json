@@ -1,0 +1,15 @@
+{
+ "status": "verified",
+ "set": "books",
+ "title": "Fourier and Wavelet Signal Processing",
+ "files": [
+  {
+   "path": "books/VetterliKovacevicGoyal_FourierWaveletSignalProcessing_2013_en.pdf",
+   "url": "https://www.fourierandwavelets.org/FWSP_a3.2_2013.pdf",
+   "pages": 294,
+   "sha256": "a20c9957736ef43422155a58d0b00421fd7cfecef8f8b1aaff5e5f947e98f31d",
+   "bytes": 5171582
+  }
+ ],
+ "note": "HTTP 200；%PDF；pypdf 可解析 294 页；名称短语已见"
+}

@@ -1,0 +1,109 @@
+[
+  {
+    "arxiv": "2208.10234",
+    "subtopic": "sampling",
+    "type": "原始研究论文",
+    "level": "硕士/博士",
+    "difficulty": "中级",
+    "reason": "IEEE TSP 接受稿：时间编码与无限幅度采样的理论、算法与硬件验证，直接对应采样与重建。"
+  },
+  {
+    "arxiv": "2510.27110",
+    "subtopic": "sampling",
+    "type": "原始研究论文",
+    "level": "硕士/博士",
+    "difficulty": "中级",
+    "reason": "IEEE SPL：多频带信号的无限幅度采样，单通道采集与恢复，延续采样定理的当代边界。"
+  },
+  {
+    "arxiv": "2410.21184",
+    "subtopic": "sampling",
+    "type": "原始研究论文",
+    "level": "硕士/博士",
+    "difficulty": "中级",
+    "reason": "带谱先验的 Shannon 型插值，讨论超越 Nyquist 速率的条件，防止把超 Nyquist 当免费午餐。"
+  },
+  {
+    "arxiv": "2410.19629",
+    "subtopic": "sampling",
+    "type": "原始研究论文",
+    "level": "硕士/博士",
+    "difficulty": "中级",
+    "reason": "系统辨识中的采样、混叠与输入条件，把采样定理接到辨识一致性。"
+  },
+  {
+    "arxiv": "2509.04199",
+    "subtopic": "sampling",
+    "type": "原始研究论文",
+    "level": "硕士/博士",
+    "difficulty": "中级",
+    "reason": "采样时钟抖动对线性系统的影响，对应时间戳与采样非理想性。"
+  },
+  {
+    "arxiv": "2311.03676",
+    "subtopic": "LTI",
+    "type": "原始研究论文",
+    "level": "硕士/博士",
+    "difficulty": "中级",
+    "reason": "把递归滤波器严格写成 LTI 系统，澄清差分方程与频率响应。"
+  },
+  {
+    "arxiv": "2307.07926",
+    "subtopic": "LTI",
+    "type": "学术教程",
+    "level": "硕士",
+    "difficulty": "中级",
+    "reason": "从 Fourier 到代数信号处理讲解卷积的多种面孔。"
+  },
+  {
+    "arxiv": "2503.04514",
+    "subtopic": "sampling",
+    "type": "原始研究论文",
+    "level": "硕士/博士",
+    "difficulty": "中级",
+    "reason": "带通非均匀采样与时变 FIR 重建，覆盖抗混叠与重建滤波器。"
+  },
+  {
+    "arxiv": "2202.05143",
+    "subtopic": "sampling",
+    "type": "原始研究论文",
+    "level": "硕士/博士",
+    "difficulty": "中级",
+    "reason": "ICASSP：平稳信号的均匀 ADC 采集，连接量化前的采样模型。"
+  },
+  {
+    "pdf_url": "https://bigwww.epfl.ch/publications/unser0001.pdf",
+    "title": "Sampling-50 Years After Shannon",
+    "authors": ["Michael Unser"],
+    "date": "2000-04-01",
+    "date_basis": "IEEE Proc. 发表年（作者页 PDF）",
+    "venue": "Proceedings of the IEEE",
+    "landing": "https://bigwww.epfl.ch/publications/unser0001.html",
+    "subtopic": "sampling",
+    "type": "综述",
+    "level": "硕士",
+    "difficulty": "入门",
+    "classic_reason": "Shannon 采样之后 50 年的权威综述，统一带限、移位不变空间与广义采样。",
+    "reason": "采样与重建的经典综述，是本科到研究生的桥。",
+    "summary": "回顾 Shannon 采样定理及其在移位不变空间、多采样率与广义线性测量下的扩展。",
+    "summary_basis": "作者页摘要/标题"
+  },
+  {
+    "pdf_url": "https://web.mit.edu/6.02/www/s2012/handouts/shannon-moondisclaimer.pdf",
+    "title": "Communication in the Presence of Noise",
+    "authors": ["Claude E. Shannon"],
+    "date": "1949-01-01",
+    "date_basis": "Proc. IRE 1949（MIT 6.02 课程合法转载 PDF）",
+    "venue": "Proceedings of the IRE",
+    "landing": "https://web.mit.edu/6.02/www/s2012/handouts/",
+    "subtopic": "sampling",
+    "type": "原始研究论文",
+    "level": "本科/硕士",
+    "difficulty": "中级",
+    "classic_reason": "采样定理与噪声中通信的原始文献。",
+    "reason": "连续时间采样与噪声信道的经典原文。",
+    "summary": "在噪声存在下的通信与采样，给出带限信号由离散样本确定的论证。",
+    "summary_basis": "历史论文标题与课程讲义说明",
+    "reserve": true
+  }
+]

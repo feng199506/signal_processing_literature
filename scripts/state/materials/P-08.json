@@ -1,0 +1,20 @@
+{
+ "status": "verified",
+ "set": "projects",
+ "title": "PyLops linear-operator inverse-problem library",
+ "files": [
+  {
+   "path": "projects/PyLops_src_en",
+   "url": "https://github.com/PyLops/pylops",
+   "commit": "9575012effa16234cdd44db4704c8efd898a7f7a",
+   "files": 375,
+   "archive_sha256": "a7f74d2446efb92652e424f15737fbf9e72e94d01252f5d908ce761fe91fdde3",
+   "bytes": 50778399
+  }
+ ],
+ "commit": "9575012effa16234cdd44db4704c8efd898a7f7a",
+ "license_files": [
+  "LICENSE.md"
+ ],
+ "note": "官方仓库快照 commit 9575012effa1：归档 zip 完整性通过，解压 375 个文件（0 个 notebook）；应有文件已见 ['pylops/', 'LICENSE.md']；许可证文件 ['LICENSE.md']；未发现 LFS 指针文件"
+}

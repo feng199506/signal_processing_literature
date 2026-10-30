@@ -1,0 +1,57 @@
+[
+ {
+  "arxiv": "2303.11908",
+  "subtopic": "PSD",
+  "type": "原始研究论文",
+  "reason": "经典谱估计器的非渐近界。"
+ },
+ {
+  "arxiv": "2603.20624",
+  "subtopic": "PSD",
+  "type": "原始研究论文",
+  "reason": "互相关周期图功率谱估计。"
+ },
+ {
+  "arxiv": "2211.02635",
+  "subtopic": "PSD",
+  "type": "原始研究论文",
+  "reason": "进化功率谱密度估计。"
+ },
+ {
+  "arxiv": "2204.07881",
+  "subtopic": "detection",
+  "type": "原始研究论文",
+  "reason": "Neyman-Pearson 检测器族。"
+ },
+ {
+  "arxiv": "2409.18377",
+  "subtopic": "detection",
+  "type": "原始研究论文",
+  "reason": "黎曼几何矩阵 CFAR。"
+ },
+ {
+  "arxiv": "2304.13928",
+  "subtopic": "estimation",
+  "type": "原始研究论文",
+  "reason": "OTFS/OFDM 的 Cramér-Rao 界。"
+ },
+ {
+  "arxiv": "2312.14507",
+  "subtopic": "estimation",
+  "type": "原始研究论文",
+  "reason": "可微 DSP 谐波参数估计。"
+ },
+ {
+  "arxiv": "2403.18445",
+  "subtopic": "estimation",
+  "type": "原始研究论文",
+  "reason": "同步信号处理的渐近分析。"
+ },
+ {
+  "arxiv": "2302.08711",
+  "subtopic": "estimation",
+  "type": "原始研究论文",
+  "reason": "零填充 OFDM 最大似然时间同步。",
+  "reserve": true
+ }
+]

@@ -1,0 +1,17 @@
+{
+ "status": "verified",
+ "set": "courses",
+ "title": "MIT 18.327 Wavelets, Filter Banks and Applications (Spring 2003) course pack",
+ "files": [
+  {
+   "path": "courses/MIT_OCW_18_327_WaveletsFilterBanks_S2003_en.zip",
+   "url": "https://ocw.mit.edu/courses/18-327-wavelets-filter-banks-and-applications-spring-2003/18.327-spring-2003.zip",
+   "pdfs": 43,
+   "pdf_pages": 570,
+   "html": 75,
+   "sha256": "5f2b6366ab5ccb59a9cf4da3d6447b5758791f23d3660469dd2c4500ea31d427",
+   "bytes": 17238415
+  }
+ ],
+ "note": "官方压缩包（原样保存），zip 完整性通过，含 488 个文件、43 个 PDF（合计 570 页）全部可解析、75 个 HTML"
+}

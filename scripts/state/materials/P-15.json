@@ -1,0 +1,20 @@
+{
+ "status": "verified",
+ "set": "projects",
+ "title": "FFTW3 source snapshot",
+ "files": [
+  {
+   "path": "projects/FFTW_src_en",
+   "url": "https://github.com/FFTW/fftw3",
+   "commit": "a7b679c528330cf6258253d6dcf5ec90552e6c93",
+   "files": 590,
+   "archive_sha256": "150538ee73854a7ca31b0bada902da143166d48f47b80895966a370c784efcc6",
+   "bytes": 1011554
+  }
+ ],
+ "commit": "a7b679c528330cf6258253d6dcf5ec90552e6c93",
+ "license_files": [
+  "COPYING"
+ ],
+ "note": "官方仓库快照 commit a7b679c52833：归档 zip 完整性通过，解压 590 个文件（0 个 notebook）；应有文件已见 ['api/', 'COPYRIGHT']；许可证文件 ['COPYING']；未发现 LFS 指针文件"
+}

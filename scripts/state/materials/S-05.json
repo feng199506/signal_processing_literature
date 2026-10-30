@@ -1,0 +1,15 @@
+{
+ "status": "verified",
+ "set": "software",
+ "title": "MNE-Python filtering and resampling official tutorials (offline HTML subset)",
+ "files": [
+  {
+   "path": "software_docs/MNE_filtering_docs_html_en",
+   "url": "https://mne.tools/stable/auto_tutorials/preprocessing/25_background_filtering.html",
+   "html_pages": 5,
+   "files": 6,
+   "bytes": 1749608
+  }
+ ],
+ "note": "官方 HTML，5 个页面全部 HTTP 200 且正文 ≥ 500 字符；已按 URL 路径保存页面本体（未镜像站外 CSS/JS），共 6 个文件；页面清单 PAGES_en.txt"
+}

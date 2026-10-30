@@ -1,0 +1,18 @@
+{
+ "status": "verified",
+ "set": "projects",
+ "title": "KalmanNet official code (TSP)",
+ "files": [
+  {
+   "path": "projects/KalmanNet_official_en",
+   "url": "https://github.com/KalmanNet/KalmanNet_TSP",
+   "commit": "828a2cf529bc84f43b37d543d916fe5858054457",
+   "files": 22,
+   "archive_sha256": "af6f5ede843a6d0b902c9161d47f91bce64e53ab03e1e6f6118aa0133afefdfe",
+   "bytes": 57726020
+  }
+ ],
+ "commit": "828a2cf529bc84f43b37d543d916fe5858054457",
+ "license_files": [],
+ "note": "官方仓库快照 commit 828a2cf529bc：归档 zip 完整性通过，解压 22 个文件（0 个 notebook）；应有文件已见 ['README.md']；仓库根目录未见许可证文件；未发现 LFS 指针文件"
+}

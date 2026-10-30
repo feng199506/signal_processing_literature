@@ -1,0 +1,15 @@
+{
+ "status": "verified",
+ "set": "books",
+ "title": "Spectral Audio Signal Processing",
+ "files": [
+  {
+   "path": "books/Smith_SpectralAudioSignalProcessing_html_en",
+   "url": "https://ccrma.stanford.edu/~jos/sasp/sasp.html",
+   "html_pages": 615,
+   "files": 618,
+   "bytes": 7364845
+  }
+ ],
+ "note": "官方 HTML 目录镜像：首页 HTTP 200 且名称短语已见；wget -r -np -l 1 保存 615 个 HTML、共 618 个文件（未保存音视频安装包）"
+}

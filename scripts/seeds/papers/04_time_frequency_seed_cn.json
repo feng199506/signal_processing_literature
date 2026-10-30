@@ -1,0 +1,66 @@
+[
+ {
+  "arxiv": "2308.02418",
+  "subtopic": "STFT",
+  "type": "原始研究论文",
+  "reason": "对窗长可微的自适应 STFT。",
+  "summary": "This paper presents a gradient-based method for on-the-fly optimization for both per-frame and per-frequency window length of the short-time Fourier transform (STFT), related to previous work in which we developed a differentiable version of STFT by making the window length a continuous parameter. The resulting differentiable adaptive STFT possesses commendable properties, such as the ability to a",
+  "summary_basis": "arXiv 摘要（检索日）",
+  "level": "硕士/博士",
+  "difficulty": "中级"
+ },
+ {
+  "arxiv": "2202.03835",
+  "subtopic": "STFT",
+  "type": "原始研究论文",
+  "reason": "IEEE TSP：协变离散时频表示。",
+  "summary": "Recent work in time-frequency analysis proposed to switch the focus from the maxima of the spectrogram toward its zeros, which, for signals corrupted by Gaussian noise, form a random point pattern with a very stable structure leveraged by modern spatial statistics tools to perform component disentanglement and signal detection. The major bottlenecks of this approach are the discretization of the S",
+  "summary_basis": "arXiv 摘要（检索日）",
+  "level": "硕士/博士",
+  "difficulty": "中级"
+ },
+ {
+  "arxiv": "2609.29119",
+  "subtopic": "other TF",
+  "type": "原始研究论文",
+  "reason": "可逆 Constant-Q 的精确分解与快速计算。",
+  "summary": "The constant-Q transform (CQT) represents audio on a logarithmic frequency axis. Its nonstationary Gabor formulation is exactly invertible, but the unequal numbers of time coefficients in its bands complicate GPU computation. An exact factorisation combines spectral selection, conjugation, windowing, and reordering into a fixed map between one packed Fourier transform and the shorter band inverse ",
+  "summary_basis": "arXiv 摘要（检索日）",
+  "level": "硕士/博士",
+  "difficulty": "中级"
+ },
+ {
+  "arxiv": "0912.2437",
+  "subtopic": "wavelet",
+  "type": "原始研究论文",
+  "classic_reason": "Daubechies-Lu-Wu 同步压缩小波，非平稳分解标准工具。",
+  "reason": "记录 EMD 式分解的假设与限制。",
+  "summary": "The EMD algorithm, first proposed in [11], made more robust as well as more versatile in [12], is a technique that aims to decompose into their building blocks functions that are the superposition of a (reasonably) small number of components, well separated in the time-frequency plane, each of which can be viewed as approximately harmonic locally, with slowly varying amplitudes and frequencies. Th",
+  "summary_basis": "arXiv 摘要（检索日）",
+  "level": "硕士/博士",
+  "difficulty": "中级"
+ },
+ {
+  "arxiv": "1101.2286",
+  "subtopic": "wavelet",
+  "type": "原始研究论文",
+  "classic_reason": "Mallat 群不变散射，多分辨率稳定特征。",
+  "reason": "小波散射的数学基础。",
+  "summary": "This paper constructs translation invariant operators on L2(R^d), which are Lipschitz continuous to the action of diffeomorphisms. A scattering propagator is a path ordered product of non-linear and non-commuting operators, each of which computes the modulus of a wavelet transform. A local integration defines a windowed scattering transform, which is proved to be Lipschitz continuous to the action",
+  "summary_basis": "arXiv 摘要（检索日）",
+  "level": "硕士/博士",
+  "difficulty": "中级"
+ },
+ {
+  "arxiv": "1304.6763",
+  "subtopic": "wavelet",
+  "type": "原始研究论文",
+  "classic_reason": "Deep Scattering Spectrum，把散射接到音频频谱。",
+  "reason": "散射谱与音频时频。",
+  "reserve": true,
+  "summary": "A scattering transform defines a locally translation invariant representation which is stable to time-warping deformations. It extends MFCC representations by computing modulation spectrum coefficients of multiple orders, through cascades of wavelet convolutions and modulus operators. Second-order scattering coefficients characterize transient phenomena such as attacks and amplitude modulation. A ",
+  "summary_basis": "arXiv 摘要（检索日）",
+  "level": "硕士/博士",
+  "difficulty": "中级"
+ }
+]

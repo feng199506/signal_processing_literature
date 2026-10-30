@@ -1,0 +1,15 @@
+{
+ "status": "verified",
+ "set": "books",
+ "title": "Applied Stochastic Differential Equations",
+ "files": [
+  {
+   "path": "books/SarkkaSolin_AppliedSDEs_2019_en.pdf",
+   "url": "https://users.aalto.fi/~asolin/sde-book/sde-book.pdf",
+   "pages": 324,
+   "sha256": "279156f8f4382faaa253c27697fcb5ff8d75ace5d940d944553b5f3465ea9435",
+   "bytes": 3971794
+  }
+ ],
+ "note": "HTTP 200；%PDF；pypdf 可解析 324 页；名称短语已见"
+}

@@ -1,0 +1,17 @@
+{
+ "status": "verified",
+ "set": "courses",
+ "title": "MIT 6.450 Principles of Digital Communications I (Fall 2006) course pack",
+ "files": [
+  {
+   "path": "courses/MIT_OCW_6_450_DigitalCommunications_I_F2006_en.zip",
+   "url": "https://ocw.mit.edu/courses/6-450-principles-of-digital-communications-i-fall-2006/6.450-fall-2006.zip",
+   "pdfs": 46,
+   "pdf_pages": 1016,
+   "html": 160,
+   "sha256": "3edc3f214935718421298c460b908a7383df475c339e5e2c0a0357707bbb4251",
+   "bytes": 22690447
+  }
+ ],
+ "note": "官方压缩包（原样保存），zip 完整性通过，含 826 个文件、46 个 PDF（合计 1016 页）全部可解析、160 个 HTML"
+}

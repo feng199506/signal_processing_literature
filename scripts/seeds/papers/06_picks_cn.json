@@ -1,0 +1,45 @@
+[
+ {
+  "arxiv": "math/0410542",
+  "subtopic": "CS",
+  "type": "原始研究论文",
+  "classic_reason": "Candès–Tao 近最优随机投影恢复，压缩感知经典。",
+  "reason": "从随机投影近最优恢复。"
+ },
+ {
+  "arxiv": "math/0503066",
+  "subtopic": "CS",
+  "type": "原始研究论文",
+  "classic_reason": "Candès–Romberg–Tao 不精确测量下的稳定恢复。",
+  "reason": "噪声与不精确测量下的稀疏恢复。"
+ },
+ {
+  "arxiv": "1706.07929",
+  "subtopic": "unrolling",
+  "type": "原始研究论文",
+  "classic_reason": "ISTA-Net 是展开 ISTA 的代表网络。",
+  "reason": "可解释优化启发的压缩感知网络。"
+ },
+ {
+  "arxiv": "1704.03264",
+  "subtopic": "deconv",
+  "type": "原始研究论文",
+  "classic_reason": "IRCNN：把 CNN 去噪器作为逆问题先验。",
+  "reason": "学习去噪先验用于重建。"
+ },
+ {
+  "arxiv": "1711.10925",
+  "subtopic": "deconv",
+  "type": "原始研究论文",
+  "classic_reason": "Deep Image Prior。",
+  "reason": "无训练先验的限制须记录。",
+  "reserve": true
+ },
+ {
+  "arxiv": "2505.22175",
+  "subtopic": "unrolling",
+  "type": "原始研究论文",
+  "reason": "多模态图信号去噪的算法展开。",
+  "reserve": true
+ }
+]

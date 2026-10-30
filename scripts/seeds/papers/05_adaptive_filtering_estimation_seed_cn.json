@@ -1,0 +1,90 @@
+[
+ {
+  "arxiv": "2107.10043",
+  "subtopic": "learned filters",
+  "type": "原始研究论文",
+  "reason": "KalmanNet：神经网络辅助 Kalman 滤波。",
+  "summary": "State estimation of dynamical systems in real-time is a fundamental task in signal processing. For systems that are well-represented by a fully known linear Gaussian state space (SS) model, the celebrated Kalman filter (KF) is a low complexity optimal solution. However, both linearity of the underlying SS model and accurate knowledge of it are often not encountered in practice. Here, we present Ka",
+  "summary_basis": "arXiv 摘要（检索日）",
+  "level": "硕士/博士",
+  "difficulty": "中级",
+  "classic_reason": "KalmanNet 于 2021-07 首次公开，略早于五年窗口起点，是学习型 Kalman 的代表作。"
+ },
+ {
+  "arxiv": "2304.07827",
+  "subtopic": "learned filters",
+  "type": "原始研究论文",
+  "reason": "Latent-KalmanNet：高维信号跟踪。",
+  "summary": "The Kalman filter (KF) is a widely-used algorithm for tracking dynamic systems that are captured by state space (SS) models. The need to fully describe a SS model limits its applicability under complex settings, e.g., when tracking based on visual data, and the processing of high-dimensional signals often induces notable latency. These challenges can be treated by mapping the measurements into lat",
+  "summary_basis": "arXiv 摘要（检索日）",
+  "level": "硕士/博士",
+  "difficulty": "中级"
+ },
+ {
+  "arxiv": "2302.09639",
+  "subtopic": "Kalman-PF",
+  "type": "综述",
+  "reason": "可微粒子滤波综述，数据自适应序贯贝叶斯。",
+  "summary": "By approximating posterior distributions with weighted samples, particle filters (PFs) provide an efficient mechanism for solving non-linear sequential state estimation problems. While the effectiveness of particle filters has been recognised in various applications, their performance relies on the knowledge of dynamic models and measurement models, as well as the construction of effective proposa",
+  "summary_basis": "arXiv 摘要（检索日）",
+  "level": "硕士/博士",
+  "difficulty": "中级"
+ },
+ {
+  "arxiv": "2204.11942",
+  "subtopic": "adaptive",
+  "type": "原始研究论文",
+  "reason": "Meta-AF：自适应滤波的元学习。",
+  "summary": "Adaptive filtering algorithms are pervasive throughout signal processing and have had a material impact on a wide variety of domains including audio processing, telecommunications, biomedical sensing, astrophysics and cosmology, seismology, and many more. Adaptive filters typically operate via specialized online, iterative optimization methods such as least-mean squares or recursive least squares ",
+  "summary_basis": "arXiv 摘要（检索日）",
+  "level": "硕士/博士",
+  "difficulty": "中级"
+ },
+ {
+  "arxiv": "2506.00403",
+  "subtopic": "adaptive",
+  "type": "原始研究论文",
+  "reason": "图信号估计中 LMS/RLS 暂态误差分析。",
+  "summary": "Recently, the proposal of the least mean square (LMS) and recursive least squares (RLS) algorithm for graph signal processing (GSP) provides excellent solutions for processing signals defined on irregular structures such as sensor networks. The existing work has completed the steady state error analysis of the GSP LMS algorithm and GSP RLS algorithm in Gaussian noise scenarios, and a range of valu",
+  "summary_basis": "arXiv 摘要（检索日）",
+  "level": "硕士/博士",
+  "difficulty": "中级"
+ },
+ {
+  "arxiv": "2201.01539",
+  "subtopic": "Kalman-PF",
+  "type": "原始研究论文",
+  "reason": "逆扩展 Kalman 滤波基础。",
+  "summary": "Recent advances in counter-adversarial systems have garnered significant research attention to inverse filtering from a Bayesian perspective. For example, interest in estimating the adversary's Kalman filter tracked estimate with the purpose of predicting the adversary's future steps has led to recent formulations of inverse Kalman filter (I-KF). In this context of inverse filtering, we address th",
+  "summary_basis": "arXiv 摘要（检索日）",
+  "level": "硕士/博士",
+  "difficulty": "中级"
+ },
+ {
+  "arxiv": "2301.00291",
+  "subtopic": "adaptive",
+  "type": "原始研究论文",
+  "reason": "泛函 Wiener 滤波器。",
+  "summary": "This paper presents a close form solution in Reproducing Kernel Hilbert Space (RKHS) for the famed Wiener filter, which we called the functional Wiener filter(FWF). Instead of using the Wiener-Hopf factorization theory, here we define a new lagged RKHS that embeds signal statistics based on the correntropy function. In essence, we extend Parzen$'$s work on the autocorrelation function RKHS to nonl",
+  "summary_basis": "arXiv 摘要（检索日）",
+  "level": "硕士/博士",
+  "difficulty": "中级"
+ },
+ {
+  "pdf_url": "https://www.cs.unc.edu/~welch/kalman/media/pdf/Kalman1960.pdf",
+  "title": "A New Approach to Linear Filtering and Prediction Problems",
+  "authors": [
+   "R. E. Kalman"
+  ],
+  "date": "1960-03-01",
+  "date_basis": "ASME 1960（UNC 镜像）",
+  "venue": "Journal of Basic Engineering",
+  "landing": "https://www.cs.unc.edu/~welch/kalman/kalmanPaper.html",
+  "subtopic": "Kalman-PF",
+  "type": "原始研究论文",
+  "classic_reason": "Kalman 滤波原文。",
+  "reason": "线性高斯递推估计的原始文献；滤波而非平滑。",
+  "summary": "提出离散线性滤波与预测递推解。",
+  "summary_basis": "论文标题"
+ }
+]

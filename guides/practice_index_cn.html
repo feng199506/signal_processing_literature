@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"><title>实战案例索引</title>
+<style>body{font-family:"Microsoft YaHei","PingFang SC","Noto Sans CJK SC",sans-serif;max-width:1100px;margin:2em auto;
+padding:0 1em;line-height:1.6;color:#222}table{border-collapse:collapse;margin:1em 0;font-size:14px}th,td{border:1px solid #ccc;
+padding:4px 8px;vertical-align:top}th{background:#f3f3f3}code{background:#f5f5f5;padding:0 3px}pre{background:#f5f5f5;padding:8px;
+overflow:auto}a{color:#0645ad}.muted{color:#888}.nav{font-size:14px;margin-bottom:1em}</style>
+<script>window.MathJax={tex:{inlineMath:[["\\(","\\)"]],displayMath:[["\\[","\\]"],["$$","$$"]]}};</script>
+<script defer src="../_offline_libs/mathjax-3.2.2/es5/tex-mml-chtml.js"></script>
+</head><body>
+<div class="nav"><a href="../index_cn.html">← 离线首页 index_cn.html</a></div>
+<h1>实战案例索引</h1>
+<p>下列案例把已下载代码/文档对到任务。本轮<strong>未执行</strong>任何命令；“建议命令”只供续跑隔离环境使用。不得把平滑、双向滤波或整段分解称为可在线。</p>
+<p>通用限制：项目自带大型数据/权重已丢弃或未下载；缺子模块/LFS 见各 SNAPSHOT 与 <a href="../project_readiness_cn.csv"><code>project_readiness_cn.csv</code></a>。</p>
+<h2>1. 采样、混叠与抗混叠</h2>
+<ul><li>资料：B-04 <a href="../books/Downey_ThinkDSP_1.1.5_en.pdf"><code>books/Downey_ThinkDSP_1.1.5_en.pdf</code></a>；<a href="../projects/ThinkDSP_code_en/"><code>projects/ThinkDSP_code_en/</code></a>（<code>thinkdsp/</code>，commit <code>f9efe78b9e58</code>）；Unser 2000；C-01/C-14。<br></li><li>输入：教学波形或 notebook 中的小型数组；示例 wav 已丢弃。采样率见各 notebook，单位通常为无量纲或 Hz。<br></li><li>预处理：无，或先低通再降采样。<br></li><li>参数：原 <code>fs</code>、目标 <code>fs</code>、抗混叠截止。<br></li><li>输出：时域与 DFT 幅值。<br></li><li>指标：混叠分量是否进入基带。<br></li><li>建议命令（未运行）：在隔离 venv 中阅读 <a href="../projects/ThinkDSP_code_en/README.md"><code>projects/ThinkDSP_code_en/README.md</code></a> 后按其中 notebook 入口执行。<br></li><li>因果性：离线教学。<br></li><li>限制：无硬件 ADC；时间抖动见 Schwarzmann 2025 论文，不在 ThinkDSP 里。</li></ul>
+<h2>2. 滤波设计与频率响应</h2>
+<ul><li>资料：S-01 butter/lfilter/filtfilt；<a href="../projects/scipy_signal_subset_en/"><code>projects/scipy_signal_subset_en/</code></a>；C-03/C-12；B-05。<br></li><li>输入：<code>float64</code> 一维序列，需自备或用随机噪声；<code>fs</code> 自定。<br></li><li>预处理：去均值（只用训练集统计）。<br></li><li>参数：阶数、截止（归一化或 Hz）、SOS vs TF。<br></li><li>输出：<code>sos</code>、<code>w,h</code>、滤波后序列。<br></li><li>指标：通带纹波、阻带衰减、群延迟。<br></li><li>建议：对照 SciPy 教程页 <code>tutorial/signal.html</code>（在 S-01 离线树）。<br></li><li><strong>因果</strong>：<code>lfilter</code> 在线可用（有 <code>zi</code>）；<code>filtfilt</code> 仅离线。边界：短记录两端不要当稳态。</li></ul>
+<h2>3. 频谱和时频分析</h2>
+<ul><li>资料：S-01 <code>stft</code>/<code>welch</code>；librosa 0.11 文档与 <a href="../projects/librosa_src_en/"><code>projects/librosa_src_en/</code></a>；B-10；ssqueezepy。<br></li><li>输入：单通道，已知 <code>fs</code>。<br></li><li>预处理：可选去趋势。<br></li><li>参数：<code>n_fft</code>、hop、窗、是否中心对齐、幅值归一化。<br></li><li>输出：STFT 复谱或功率谱。<br></li><li>指标：COLA 误差、泄漏。<br></li><li>因果：默认中心窗非因果。在线须右对齐窗并接受延迟。</li></ul>
+<h2>4. 去噪、检测及参数估计</h2>
+<ul><li>资料：B-07、B-16；PyLops；03 组检测/CRLB 论文。<br></li><li>输入：带噪序列；噪声方差若未知需估计。<br></li><li>预处理：不要用含测试段的全局 z-score。<br></li><li>输出：点估计、区间或检测标签。<br></li><li>指标：MSE vs CRLB、虚警约束下的检测概率。<br></li><li>因果：批估计默认离线；滑动窗口检测才可能在线，延迟 = 窗长 + 确认逻辑。</li></ul>
+<h2>5. 在线自适应滤波</h2>
+<ul><li>资料：<a href="../projects/padasip_src_en/"><code>projects/padasip_src_en/</code></a>；Zhao 2025 LMS 瞬态；Colburn 2022 Wiener。<br></li><li>输入：期望信号 <code>d[n]</code> 与输入 <code>u[n]</code>，样本级。<br></li><li>参数：滤波器长度、步长 μ、遗忘因子。<br></li><li>输出：误差 <code>e[n]</code>、权重轨迹。<br></li><li>指标：稳态 MSE、发散与否。<br></li><li>因果：<strong>样本级在线（因果）</strong>。不要用整段相关矩阵的 Wiener 解冒充 LMS。</li></ul>
+<h2>6. 多传感器状态估计</h2>
+<ul><li>资料：B-08、B-09；<a href="../projects/filterpy_src_en/"><code>projects/filterpy_src_en/</code></a>；<a href="../projects/StoneSoup_src_en/"><code>projects/StoneSoup_src_en/</code></a>；KalmanNet 官方代码（无权重）。<br></li><li>输入：带时间戳的测量；单位与状态量纲必须一致。<br></li><li>预处理：时间对齐、异常值门控。<br></li><li>输出：滤波均值/协方差。<br></li><li>指标：NEES/NIS、位置 RMSE（需声明滤波还是平滑）。<br></li><li>因果：<code>filter</code> 因果；<code>rts_smoother</code> 等<strong>离线</strong>。KalmanNet 训练离线，推理是否逐步见脚本，本轮未验证。</li></ul>
+<h2>7. 工业振动或电流故障分析</h2>
+<ul><li>资料：10 组论文；<a href="../projects/PyEMD_src_en/"><code>projects/PyEMD_src_en/</code></a>；ssqueezepy。<br></li><li>输入：加速度或电流，kHz 量级，单位 m/s² 或 A。<br></li><li>预处理：去趋势、抗混叠、可能的阶次重采样（需转速）。<br></li><li>输出：谱、包络、IMF（若用 EMD）。<br></li><li>指标：检测延迟、虚警；<strong>不要</strong>用整段准确率。<br></li><li>因果：谱滑动窗可近在线；EMD 不可。Vieira 2025 专门讨论评估是否现实。</li></ul>
+<h2>8. 音频增强或分离</h2>
+<ul><li>资料：Asteroid、pyroomacoustics、09 组论文。<br></li><li>输入：wav/float，16–48 kHz；示例音频多已丢弃，需自备小型文件。<br></li><li>预处理：重采样到模型 <code>fs</code>。<br></li><li>输出：估计源或增强单通道。<br></li><li>指标：SDR 等为<strong>离线</strong>；实时看延迟与 RTF（未测）。<br></li><li>因果：默认整句离线。低延迟见 Venkatesh 2024/2025。权重未下载，不能复现论文数值。</li></ul>
+<h2>9. 生物信号分析</h2>
+<ul><li>资料：C-09；WFDB 源码与文档；MNE 滤波教程；EEGNet 2016。<br></li><li>输入：WFDB 记录头给出 <code>fs</code> 与单位（通常 mV）；本库不附带 PhysioNet 数据库。<br></li><li>预处理：工频陷波、带通；必须选因果或零相位并写进记录。<br></li><li>输出：滤波波形、QRS 位置等。<br></li><li>指标：灵敏度/正预测（检测），不是离线分类准确率。<br></li><li>因果：监护场景用因果滤波；科研离线可用 <code>filtfilt</code>，但要标明。</li></ul>
+<h2>10. 离线算法转为流式处理</h2>
+<ul><li>资料：S-12 GNU Radio Doxygen；SciPy <code>lfilter(..., zi=)</code>；12 组 STFT 域语音论文。<br></li><li>步骤（概念，未实施）：切帧 → 保存 overlap 与滤波器状态 → 每块输出 hop 个新样本。<br></li><li>限制：任何需要整段的算法（EMD、filtfilt、非因果平滑）没有流式对应，除非改造成因果近似。</li></ul>
+<h2>11. CPU、GPU 或嵌入式性能比较</h2>
+<ul><li>资料：FFTW 手册与源码；CMSIS-DSP；torchaudio 文档；Sommer DSP packing；Dai 定点量化。<br></li><li>本轮<strong>没有</strong>基准数字。续跑应在隔离环境分别编译/安装后用同一输入长度比较延迟，记录编译器、频率、是否 SIMD。<br></li><li>不得引用上游 README 的性能数字当作本机结果。</li></ul>
+</body></html>

@@ -1,0 +1,15 @@
+{
+ "status": "verified",
+ "set": "software",
+ "title": "SciPy signal and fft official documentation subset (offline HTML)",
+ "files": [
+  {
+   "path": "software_docs/SciPy_1.16_signal_fft_docs_html_en",
+   "url": "https://docs.scipy.org/doc/scipy/reference/signal.html",
+   "html_pages": 11,
+   "files": 83,
+   "bytes": 10182054
+  }
+ ],
+ "note": "官方 HTML，11 个页面全部 HTTP 200 且正文 ≥ 600 字符；wget 离线保存（页面资源、链接改写），共 83 个文件；页面清单 PAGES_en.txt"
+}

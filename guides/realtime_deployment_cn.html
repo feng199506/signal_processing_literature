@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"><title>实时实现与部署路线</title>
+<style>body{font-family:"Microsoft YaHei","PingFang SC","Noto Sans CJK SC",sans-serif;max-width:1100px;margin:2em auto;
+padding:0 1em;line-height:1.6;color:#222}table{border-collapse:collapse;margin:1em 0;font-size:14px}th,td{border:1px solid #ccc;
+padding:4px 8px;vertical-align:top}th{background:#f3f3f3}code{background:#f5f5f5;padding:0 3px}pre{background:#f5f5f5;padding:8px;
+overflow:auto}a{color:#0645ad}.muted{color:#888}.nav{font-size:14px;margin-bottom:1em}</style>
+<script>window.MathJax={tex:{inlineMath:[["\\(","\\)"]],displayMath:[["\\[","\\]"],["$$","$$"]]}};</script>
+<script defer src="../_offline_libs/mathjax-3.2.2/es5/tex-mml-chtml.js"></script>
+</head><body>
+<div class="nav"><a href="../index_cn.html">← 离线首页 index_cn.html</a></div>
+<h1>实时实现与部署路线</h1>
+<p>对应 <a href="../12_realtime_implementation/"><code>12_realtime_implementation/</code></a>。本轮只收集，不宣称已运行、已复现或达到实时性能。代码等级见 <a href="../project_readiness_cn.csv"><code>project_readiness_cn.csv</code></a>（L0 已下载，L1 为入口/依赖/配置的静态核对）。</p>
+<h2>从离线算法到流式</h2>
+<ol><li><strong>块、缓冲、分帧</strong>   离线脚本一次吃完整段 <code>x[0:N]</code>。流式必须固定 <code>frame_length</code>、<code>hop</code>、输入队列和输出队列。 依据：GNU Radio Doxygen <code>page_usage</code> / <code>group__filter__blk</code>（<a href="../software_docs/GNU_Radio_docs_html_en/www.gnuradio.org/doc/doxygen/index.html"><code>software_docs/GNU_Radio_docs_html_en/</code></a>）；SciPy <code>lfilter</code> 的 <code>zi</code> 状态。 项目：<a href="../projects/scipy_signal_subset_en/scipy/signal/_signaltools.py"><code>projects/scipy_signal_subset_en/scipy/signal/_signaltools.py</code></a>（静态阅读，不执行）。</li></ol>
+<ol><li><strong>延迟预算</strong>   总延迟 ≥ 缓冲等待 + 算法前瞻 + 计算时间 + I/O。 中心窗 STFT 的算法前瞻 ≈ 窗长/2，这不是计算慢，是非因果。 论文：<a href="../09_audio_speech/papers/2024_Venkatesh_RealTimeLowLatency_en.pdf"><code>09_audio_speech/papers/2024_Venkatesh_RealTimeLowLatency_en.pdf</code></a>、<a href="../12_realtime_implementation/papers/2022_Wang_STFTDomainNeuralSpeech_en.pdf"><code>12_realtime_implementation/papers/2022_Wang_STFTDomainNeuralSpeech_en.pdf</code></a>。</li></ol>
+<ol><li><strong>因果滤波 vs 离线零相位</strong>   实时路径只用 <code>lfilter</code> / SOS 前向，或 FIR 线性相位但接受群延迟。 <code>filtfilt</code>、平滑器、EMD、未来帧 ISTFT 禁止标成可部署在线。MNE 滤波教程把这一点写得很清楚。</li></ol>
+<ol><li><strong>数值精度与定点</strong>   论文：<code>2024_Dai_TrainableFixedPointQuantization_en.pdf</code>、<code>2022_Sommer_DSPPacking_en.pdf</code>、<code>2023_Hu_ResourceEfficientFIRFilter_en.pdf</code>。 实现：<a href="../projects/CMSIS_DSP_src_en/"><code>projects/CMSIS_DSP_src_en/</code></a>（Q7/Q15/Q31，溢出饱和）、<a href="../projects/FFTW_src_en/"><code>projects/FFTW_src_en/</code></a>（浮点规划）。 级联 SOS、递归滤波的并行化：<code>2026_Zhai_ParallelCascadedRecursiveFiltering_en.pdf</code>。</li></ol>
+<ol><li><strong>GPU / 可微流水</strong>   <a href="../software_docs/torchaudio_docs_html_en/"><code>software_docs/torchaudio_docs_html_en/</code></a>；论文 <code>2025_Spanio_TorchFX_en.pdf</code>、<code>2026_Spanio_Fluxion_en.pdf</code>、<code>2025_Brady_PyDPF_en.pdf</code>。 本轮未测 RTF，也没有下载权重。</li></ol>
+<ol><li><strong>调度</strong>   实时线程不要做内存分配与阻塞 IO。GNU Radio 是流图调度的参考，不是本机已部署系统。</li></ol>
+<h2>检查清单（部署前静态）</h2>
+<ul><li>输入：交织/非交织、采样率、位深、单位、时间戳来源。</li><li>状态：滤波器 <code>zi</code>、STFT overlap 缓冲、检测器的确认窗。</li><li>溢出：定点最大幅度、中间累加位宽。</li><li>指标：延迟（毫秒）、是否丢帧、与离线参考的误差；<strong>不要</strong>用离线分类准确率代替。</li><li>硬件：本库 CMSIS 针对 Cortex-M/A，FFTW 针对 CPU；均未上板、未编译。</li></ul>
+<h2>建议阅读顺序</h2>
+<p>C-10 <a href="../courses/MIT_OCW_2_161_SignalProcessing_F2008_en.zip"><code>courses/MIT_OCW_2_161_SignalProcessing_F2008_en.zip</code></a>（连续/离散与采集）→ B-05 实现章节 → SciPy <code>lfilter</code> 与 MNE 滤波教程 → CMSIS-DSP / FFTW 文档 → 12 组近五年论文。</p>
+</body></html>

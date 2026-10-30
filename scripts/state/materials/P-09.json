@@ -1,0 +1,20 @@
+{
+ "status": "verified",
+ "set": "projects",
+ "title": "padasip adaptive filtering library",
+ "files": [
+  {
+   "path": "projects/padasip_src_en",
+   "url": "https://github.com/matousc89/padasip",
+   "commit": "4c13692b8f7c812b74f7f7b0d31b76a0c36df156",
+   "files": 81,
+   "archive_sha256": "19e3745d30222bd6b8e7bb7542859d16229e0c7f509b2d95bdbddb149ed3d971",
+   "bytes": 82901
+  }
+ ],
+ "commit": "4c13692b8f7c812b74f7f7b0d31b76a0c36df156",
+ "license_files": [
+  "LICENSE.txt"
+ ],
+ "note": "官方仓库快照 commit 4c13692b8f7c：归档 zip 完整性通过，解压 81 个文件（0 个 notebook）；应有文件已见 ['padasip/', 'LICENSE']；许可证文件 ['LICENSE.txt']；未发现 LFS 指针文件"
+}

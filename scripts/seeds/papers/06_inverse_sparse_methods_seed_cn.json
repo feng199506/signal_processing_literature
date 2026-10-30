@@ -1,0 +1,69 @@
+[
+ {
+  "arxiv": "math/0410542",
+  "subtopic": "CS",
+  "type": "原始研究论文",
+  "classic_reason": "Candès–Tao 近最优随机投影恢复，压缩感知经典。",
+  "reason": "从随机投影近最优恢复。",
+  "summary": "Suppose we are given a vector $f$ in $\\R^N$. How many linear measurements do we need to make about $f$ to be able to recover $f$ to within precision $ε$ in the Euclidean ($\\ell_2$) metric? Or more exactly, suppose we are interested in a class ${\\cal F}$ of such objects--discrete digital signals, images, etc; how many linear measurements do we need to recover objects from this class to within accur",
+  "summary_basis": "arXiv 摘要（检索日）",
+  "level": "硕士/博士",
+  "difficulty": "中级"
+ },
+ {
+  "arxiv": "math/0503066",
+  "subtopic": "CS",
+  "type": "原始研究论文",
+  "classic_reason": "Candès–Romberg–Tao 不精确测量下的稳定恢复。",
+  "reason": "噪声与不精确测量下的稀疏恢复。",
+  "summary": "Suppose we wish to recover an n-dimensional real-valued vector x_0 (e.g. a digital signal or image) from incomplete and contaminated observations y = A x_0 + e; A is a n by m matrix with far fewer rows than columns (n << m) and e is an error term. Is it possible to recover x_0 accurately based on the data y? To recover x_0, we consider the solution x* to the l1-regularization problem min \\|x\\|_1 s",
+  "summary_basis": "arXiv 摘要（检索日）",
+  "level": "硕士/博士",
+  "difficulty": "中级"
+ },
+ {
+  "arxiv": "1706.07929",
+  "subtopic": "unrolling",
+  "type": "原始研究论文",
+  "classic_reason": "ISTA-Net 是展开 ISTA 的代表网络。",
+  "reason": "可解释优化启发的压缩感知网络。",
+  "summary": "With the aim of developing a fast yet accurate algorithm for compressive sensing (CS) reconstruction of natural images, we combine in this paper the merits of two existing categories of CS methods: the structure insights of traditional optimization-based methods and the speed of recent network-based ones. Specifically, we propose a novel structured deep network, dubbed ISTA-Net, which is inspired ",
+  "summary_basis": "arXiv 摘要（检索日）",
+  "level": "硕士/博士",
+  "difficulty": "中级"
+ },
+ {
+  "arxiv": "1704.03264",
+  "subtopic": "deconv",
+  "type": "原始研究论文",
+  "classic_reason": "IRCNN：把 CNN 去噪器作为逆问题先验。",
+  "reason": "学习去噪先验用于重建。",
+  "summary": "Model-based optimization methods and discriminative learning methods have been the two dominant strategies for solving various inverse problems in low-level vision. Typically, those two kinds of methods have their respective merits and drawbacks, e.g., model-based optimization methods are flexible for handling different inverse problems but are usually time-consuming with sophisticated priors for ",
+  "summary_basis": "arXiv 摘要（检索日）",
+  "level": "硕士/博士",
+  "difficulty": "中级"
+ },
+ {
+  "arxiv": "1711.10925",
+  "subtopic": "deconv",
+  "type": "原始研究论文",
+  "classic_reason": "Deep Image Prior。",
+  "reason": "无训练先验的限制须记录。",
+  "reserve": true,
+  "summary": "Deep convolutional networks have become a popular tool for image generation and restoration. Generally, their excellent performance is imputed to their ability to learn realistic image priors from a large number of example images. In this paper, we show that, on the contrary, the structure of a generator network is sufficient to capture a great deal of low-level image statistics prior to any learn",
+  "summary_basis": "arXiv 摘要（检索日）",
+  "level": "硕士/博士",
+  "difficulty": "中级"
+ },
+ {
+  "arxiv": "2505.22175",
+  "subtopic": "unrolling",
+  "type": "原始研究论文",
+  "reason": "多模态图信号去噪的算法展开。",
+  "reserve": true,
+  "summary": "We propose a denoising method for multimodal graph signals by an alternating minimization scheme that sequentially solves signal restoration and graph learning problems. Many complex-structured data, i.e., those on sensor networks, can capture multiple modalities at each measurement point, referred to as modalities. They are also assumed to have an underlying structure or correlations in modality ",
+  "summary_basis": "arXiv 摘要（检索日）",
+  "level": "硕士/博士",
+  "difficulty": "中级"
+ }
+]

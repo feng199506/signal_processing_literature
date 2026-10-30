@@ -1,0 +1,17 @@
+{
+ "status": "verified",
+ "set": "courses",
+ "title": "MIT 2.161 Signal Processing: Continuous and Discrete (Fall 2008) course pack",
+ "files": [
+  {
+   "path": "courses/MIT_OCW_2_161_SignalProcessing_F2008_en.zip",
+   "url": "https://ocw.mit.edu/courses/2-161-signal-processing-continuous-and-discrete-fall-2008/2.161-fall-2008.zip",
+   "pdfs": 65,
+   "pdf_pages": 709,
+   "html": 111,
+   "sha256": "e26459b852964e514280fcfad65ad9669b3aa09a3d6fb846b9d7d581ffcd72ac",
+   "bytes": 61126344
+  }
+ ],
+ "note": "官方压缩包（原样保存），zip 完整性通过，含 630 个文件、65 个 PDF（合计 709 页）全部可解析、111 个 HTML"
+}

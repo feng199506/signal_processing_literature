@@ -1,0 +1,15 @@
+{
+ "status": "verified",
+ "set": "software",
+ "title": "GNU Octave Forge signal package documentation subset",
+ "files": [
+  {
+   "path": "software_docs/GNU_Octave_signal_docs_html_en",
+   "url": "https://octave.sourceforge.io/signal/overview.html",
+   "html_pages": 5,
+   "files": 6,
+   "bytes": 68175
+  }
+ ],
+ "note": "官方 HTML，5 个页面全部 HTTP 200 且正文 ≥ 200 字符；已按 URL 路径保存页面本体（未镜像站外 CSS/JS），共 6 个文件；页面清单 PAGES_en.txt"
+}

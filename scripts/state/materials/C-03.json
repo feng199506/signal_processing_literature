@@ -1,0 +1,17 @@
+{
+ "status": "verified",
+ "set": "courses",
+ "title": "MIT 6.341 Discrete-Time Signal Processing (Fall 2005) course pack",
+ "files": [
+  {
+   "path": "courses/MIT_OCW_6_341_DiscreteTimeSP_F2005_en.zip",
+   "url": "https://ocw.mit.edu/courses/6-341-discrete-time-signal-processing-fall-2005/6.341-fall-2005.zip",
+   "pdfs": 56,
+   "pdf_pages": 424,
+   "html": 134,
+   "sha256": "5c963fe47b088ca107d64d59b9c88908b8e80dfc1a9bfe70cb8ff793885d3e61",
+   "bytes": 51137203
+  }
+ ],
+ "note": "官方压缩包（原样保存），zip 完整性通过，含 719 个文件、56 个 PDF（合计 424 页）全部可解析、134 个 HTML"
+}

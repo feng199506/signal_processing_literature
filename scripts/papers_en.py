@@ -277,7 +277,9 @@ def verify(path, m):
     tm = title_in_text(m["title"], head)
     sn = surname(m["authors"][0]) if m["authors"] else ""
     au = bool(sn) and sn.lower() in re.sub(r"[^a-z]", "", fold_lower(head))
-    refs = bool(re.search(r"(?i)\b(references|bibliography|works cited)\b", full)) or "参考文献" in full
+    refs = bool(re.search(
+        r"(?i)(references|bibliography|works cited|r\s*e\s*f\s*e\s*r\s*e\s*n\s*c\s*e\s*s|bibliograph(y|ie))",
+        full)) or "参考文献" in full
     info.update({"title_match": round(tm, 2), "author_found": au, "refs": refs})
     if not refs:
         return "fail", "未找到参考文献节（可能不完整）", info

@@ -1,0 +1,73 @@
+[
+ {
+  "arxiv": "2204.09911",
+  "subtopic": "realtime",
+  "type": "原始研究论文",
+  "reason": "TASLP：极低算法延迟 STFT 域语音增强。",
+  "summary": "Deep learning based speech enhancement in the short-time Fourier transform (STFT) domain typically uses a large window length such as 32 ms. A larger window can lead to higher frequency resolution and potentially better enhancement. This however incurs an algorithmic latency of 32 ms in an online setup, because the overlap-add algorithm used in the inverse STFT (iSTFT) is also performed using the ",
+  "summary_basis": "arXiv 摘要（检索日）",
+  "level": "硕士/博士",
+  "difficulty": "中级"
+ },
+ {
+  "arxiv": "2610.24622",
+  "subtopic": "embedded",
+  "type": "原始研究论文",
+  "reason": "可微 DSP 从训练 GPU 到实时边缘。",
+  "summary": "Native real-time audio engines meet audio deadlines but are hard to connect to machine-learning workflows, while tensor frameworks integrate with machine learning but process audio as offline batches without timing guarantees; runtime layers built on them inherit the host's scheduling and deployment footprint. This paper presents Fluxion, a Rust audio DSP runtime for cascaded second-order sections",
+  "summary_basis": "arXiv 摘要（检索日）",
+  "level": "硕士/博士",
+  "difficulty": "中级"
+ },
+ {
+  "arxiv": "2504.08624",
+  "subtopic": "realtime",
+  "type": "原始研究论文",
+  "reason": "TorchFX：PyTorch/GPU 音频 DSP。",
+  "summary": "The burgeoning complexity and real-time processing demands of audio signals necessitate optimized algorithms that harness the computational prowess of Graphics Processing Units (GPUs). Existing Digital Signal Processing (DSP) libraries often fall short in delivering the requisite efficiency and flexibility, particularly in integrating Artificial Intelligence (AI) models. In response, we introduce ",
+  "summary_basis": "arXiv 摘要（检索日）",
+  "level": "硕士/博士",
+  "difficulty": "中级"
+ },
+ {
+  "arxiv": "2401.17544",
+  "subtopic": "embedded",
+  "type": "原始研究论文",
+  "reason": "FPGA 可训练定点量化。",
+  "summary": "Quantization is a crucial technique for deploying deep learning models on resource-constrained devices, such as embedded FPGAs. Prior efforts mostly focus on quantizing matrix multiplications, leaving other layers like BatchNorm or shortcuts in floating-point form, even though fixed-point arithmetic is more efficient on FPGAs. A common practice is to fine-tune a pre-trained model to fixed-point fo",
+  "summary_basis": "arXiv 摘要（检索日）",
+  "level": "硕士/博士",
+  "difficulty": "中级"
+ },
+ {
+  "arxiv": "2203.11028",
+  "subtopic": "embedded",
+  "type": "原始研究论文",
+  "reason": "FPGA DSP 块低精度打包。",
+  "summary": "The number of Digital Signal Processor (DSP) resources available in Field Programmable Gate Arrays (FPGAs) is often quite limited. Therefore, full utilization of available DSP resources for the computationally intensive parts of an algorithm is paramount for optimizing the non-functional properties of an implementation (i.e., performance, power, and area). The DSPs available in Xilinx devices impl",
+  "summary_basis": "arXiv 摘要（检索日）",
+  "level": "硕士/博士",
+  "difficulty": "中级"
+ },
+ {
+  "arxiv": "2607.23763",
+  "subtopic": "realtime",
+  "type": "原始研究论文",
+  "reason": "多核 CPU/GPU 并行级联递归滤波。",
+  "summary": "The companion of this paper reformulated cascaded second-order (biquad) recursive filtering as a block-tridiagonal linear system and developed two parallel solution algorithms, PH factorization and cyclic reduction, reaching over 600 Megasamples per second on a single SIMD core. This paper scales that framework to multi-core CPUs and GPUs, where a new obstacle appears: the terminal outputs of each",
+  "summary_basis": "arXiv 摘要（检索日）",
+  "level": "硕士/博士",
+  "difficulty": "中级"
+ },
+ {
+  "arxiv": "2510.25693",
+  "subtopic": "realtime",
+  "type": "原始研究论文",
+  "reason": "PyDPF 可微粒子滤波 Python 包。",
+  "reserve": true,
+  "summary": "State-space models (SSMs) are a widely used tool in time series analysis. In the complex systems that arise from real-world data, it is common to employ particle filtering (PF), an efficient Monte Carlo method for estimating the hidden state corresponding to a sequence of observations. Applying particle filtering requires specifying both the parametric form and the parameters of the system, which ",
+  "summary_basis": "arXiv 摘要（检索日）",
+  "level": "硕士/博士",
+  "difficulty": "中级"
+ }
+]

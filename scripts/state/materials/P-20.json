@@ -1,0 +1,20 @@
+{
+ "status": "verified",
+ "set": "projects",
+ "title": "DDSP differentiable DSP source snapshot",
+ "files": [
+  {
+   "path": "projects/DDSP_src_en",
+   "url": "https://github.com/magenta/ddsp",
+   "commit": "676aa9d8016e9b0e962d02cb9133081439e4a435",
+   "files": 140,
+   "archive_sha256": "c9e20cdf115422701bbec7ffcb8b60da410097d6cd939a96318b67a498e48b0c",
+   "bytes": 322663
+  }
+ ],
+ "commit": "676aa9d8016e9b0e962d02cb9133081439e4a435",
+ "license_files": [
+  "LICENSE"
+ ],
+ "note": "官方仓库快照 commit 676aa9d8016e：归档 zip 完整性通过，解压 140 个文件（9 个 notebook）；应有文件已见 ['ddsp/', 'LICENSE']；许可证文件 ['LICENSE']；未发现 LFS 指针文件"
+}

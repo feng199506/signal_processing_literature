@@ -1,0 +1,15 @@
+{
+ "status": "verified",
+ "set": "books",
+ "title": "Think DSP: Digital Signal Processing in Python",
+ "files": [
+  {
+   "path": "books/Downey_ThinkDSP_1.1.5_en.pdf",
+   "url": "https://greenteapress.com/thinkdsp/thinkdsp.pdf",
+   "pages": 153,
+   "sha256": "9d0e1b2f91d3085013d2b5eef35706061d918f65864f08460a5ac33c7346c0f4",
+   "bytes": 4278028
+  }
+ ],
+ "note": "HTTP 200；%PDF；pypdf 可解析 153 页；名称短语已见"
+}

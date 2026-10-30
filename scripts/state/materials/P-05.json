@@ -1,0 +1,20 @@
+{
+ "status": "verified",
+ "set": "projects",
+ "title": "WFDB-Python source snapshot",
+ "files": [
+  {
+   "path": "projects/wfdb_python_src_en",
+   "url": "https://github.com/MIT-LCP/wfdb-python",
+   "commit": "b8914e1c9c777c45571c894cb7b6579550a86f13",
+   "files": 283,
+   "archive_sha256": "4e8ca6abad499bafbd930443ccd32c13369a3b27ea2c5324cbae0fcb1540ce87",
+   "bytes": 105198933
+  }
+ ],
+ "commit": "b8914e1c9c777c45571c894cb7b6579550a86f13",
+ "license_files": [
+  "LICENSE"
+ ],
+ "note": "官方仓库快照 commit b8914e1c9c77：归档 zip 完整性通过，解压 283 个文件（1 个 notebook）；应有文件已见 ['src/wfdb/', 'LICENSE']；许可证文件 ['LICENSE']；未发现 LFS 指针文件"
+}

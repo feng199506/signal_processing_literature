@@ -177,29 +177,61 @@ def main():
             "子方向": cat, "名称": CATS[cat][1],
             "论文已核验": n, "论文近五年占比": pct, "其中已有复用": n_reuse,
             "教材已核验": books, "课程已核验": courses, "软件已核验": sw, "项目已核验": proj,
-            "失败/待核验": n_fail, "状态": "进行中"
+            "失败/待核验": n_fail, "状态": "本轮收集完成"
         })
     pp = ROOT/"progress_cn.csv"
     with pp.open("w", encoding="utf-8-sig", newline="") as f:
         w=csv.DictWriter(f, fieldnames=list(prog[0].keys()) if prog else [])
         w.writeheader(); w.writerows(prog)
-    # project readiness
+    # project readiness: L0 = downloaded; L1 = entry/deps/config statically checked; never run
     ready=[]
     for r in mr:
         if not r["资料类型"].startswith("参考"):
             continue
         rec=load(MAT_STATE/f"{r['编号']}.json", {})
         note=rec.get("note","")
-        missing=""
-        if "LFS" in note or "lfs" in note:
-            missing="可能有未保存的 LFS 对象，见核验说明"
+        local=r["本地路径"].split(";")[0].strip()
+        p = ROOT / local if local else None
+        names=[]
+        if p and p.exists():
+            names=[x.name.lower() for x in p.rglob("*") if x.is_file()]
+        has_readme=any(n.startswith("readme") for n in names)
+        has_lic=any(n.startswith(("license","licence","copying","copyright")) or n=="copying" for n in names)
+        has_snap=any(n.startswith("snapshot") for n in names)
+        dep_files=[n for n in names if n in {
+            "requirements.txt","requirements-dev.txt","pyproject.toml","setup.py","setup.cfg",
+            "environment.yml","environment.yaml","pipfile","package.json","cmakelists.txt",
+            "makefile","meson.build","cargo.toml"}]
+        entry=[n for n in names if n in {"setup.py","pyproject.toml","cmakelists.txt","makefile","meson.build"}
+               or n.endswith(".__init__.py") or n=="__init__.py"]
+        grade="L0"
+        static="未完成"
+        if rec.get("status")=="verified" and p and p.exists():
+            grade="L0"
+            checks=[]
+            if has_readme: checks.append("README")
+            if has_lic: checks.append("许可证")
+            if has_snap: checks.append("SNAPSHOT")
+            if dep_files: checks.append("依赖清单:"+ ",".join(sorted(set(dep_files))[:6]))
+            if entry: checks.append("入口/构建文件")
+            if has_readme and (dep_files or entry or has_snap):
+                grade="L1"
+            static="；".join(checks) if checks else "已下载但未见 README/依赖清单"
+        missing=[]
+        if ("发现可能的 LFS" in note) or ("LFS 指针" in note and "未发现" not in note):
+            missing.append("可能有未保存的 LFS 对象")
+        if rec.get("status")=="verified" and not has_readme:
+            missing.append("未见 README")
+        if rec.get("status")=="verified" and not dep_files:
+            missing.append("未见常见依赖清单（不代表无法构建）")
+        missing.append("本轮未安装运行依赖；未执行测试")
         ready.append({
             "编号": r["编号"], "项目": r["标题"], "本地路径": r["本地路径"],
-            "可运行性等级": "L1" if rec.get("status")=="verified" else "L0/未完成",
-            "静态核对": "入口/许可证/应有路径见核验说明" if rec.get("status")=="verified" else "未完成",
-            "缺失依赖": missing or "本轮未安装运行依赖；未执行测试",
-            "后续验证条件": "新建隔离环境，按 SNAPSHOT 与 README 安装依赖后做小型预测；禁止把上游 README 演示结果当作本机复现",
-            "许可证": r["许可证"], "版本/commit": r["版本"]
+            "可运行性等级": grade,
+            "静态核对": static,
+            "缺失依赖": "；".join(missing),
+            "后续验证条件": "新建隔离环境，按 SNAPSHOT 与 README 安装依赖后做小型预测；禁止把上游 README 演示结果当作本机复现；禁止把平滑/双向滤波结果称为在线",
+            "许可证": r["许可证"], "版本/commit": rec.get("commit") or r["版本"]
         })
     rp = ROOT/"project_readiness_cn.csv"
     with rp.open("w", encoding="utf-8-sig", newline="") as f:

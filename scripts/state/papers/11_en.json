@@ -1,0 +1,90 @@
+{
+ "arxiv:1912.10557": {
+  "status": "ok",
+  "pdf": "https://arxiv.org/pdf/1912.10557v3",
+  "source": "new",
+  "note": "通过：HTTP 200；%PDF 头；pypdf 可解析 27 页、130884 字符；标题匹配 1.00；第一作者姓氏已见；参考文献节已见",
+  "pages": 27,
+  "chars": 130884,
+  "sha256": "ad257d64c7d93e3fa5de0e152e6eab89912a219efdcdf14ff5b7cc3400d5e09f",
+  "bytes": 7801053,
+  "title_match": 1.0,
+  "author_found": true,
+  "refs": true,
+  "path": "11_learning_based/papers/2019_Monga_AlgorithmUnrolling_en.pdf"
+ },
+ "arxiv:2204.07402": {
+  "status": "ok",
+  "pdf": "https://arxiv.org/pdf/2204.07402v2",
+  "source": "new",
+  "note": "通过：HTTP 200；%PDF 头；pypdf 可解析 15 页、84616 字符；标题匹配 1.00；第一作者姓氏已见；参考文献节已见",
+  "pages": 15,
+  "chars": 84616,
+  "sha256": "c59dcd609187dba28523a65ea9c1a9a91539fd2d11374c5e5df2179deb2cca4e",
+  "bytes": 2235655,
+  "title_match": 1.0,
+  "author_found": true,
+  "refs": true,
+  "path": "11_learning_based/papers/2022_Niizumi_BYOLForAudio_en.pdf"
+ },
+ "arxiv:2512.03637": {
+  "status": "ok",
+  "pdf": "https://arxiv.org/pdf/2512.03637v2",
+  "source": "new",
+  "note": "通过：HTTP 200；%PDF 头；pypdf 可解析 16 页、88308 字符；标题匹配 1.00；第一作者姓氏已见；参考文献节已见",
+  "pages": 16,
+  "chars": 88308,
+  "sha256": "0e0ce0fdd50f57302d49900cc5470e11277a510badd1e18b016b3bf92fa834d5",
+  "bytes": 1207612,
+  "title_match": 1.0,
+  "author_found": true,
+  "refs": true,
+  "path": "11_learning_based/papers/2025_Yamamoto_AaSP_en.pdf"
+ },
+ "arxiv:2601.19297": {
+  "status": "ok",
+  "pdf": "https://arxiv.org/pdf/2601.19297v1",
+  "source": "new",
+  "note": "通过：HTTP 200；%PDF 头；pypdf 可解析 5 页、24073 字符；标题匹配 1.00；第一作者姓氏已见；参考文献节已见",
+  "pages": 5,
+  "chars": 24073,
+  "sha256": "f56ebc73661ffd8cd6220b96e01480fcd4deb70faf6392d90dad792934ee143e",
+  "bytes": 730208,
+  "title_match": 1.0,
+  "author_found": true,
+  "refs": true,
+  "path": "11_learning_based/papers/2026_Schrader_PhaseRetrievalPhysicsInformed_en.pdf"
+ },
+ "arxiv:2505.07560": {
+  "status": "ok",
+  "pdf": "https://arxiv.org/pdf/2505.07560v1",
+  "source": "new",
+  "note": "通过：HTTP 200；%PDF 头；pypdf 可解析 13 页、59882 字符；标题匹配 1.00；第一作者姓氏已见；参考文献节已见",
+  "pages": 13,
+  "chars": 59882,
+  "sha256": "5fcba3ff3cde9f34d47b01131d07433230d0201610b24e42fdad7126fa548f02",
+  "bytes": 1342410,
+  "title_match": 1.0,
+  "author_found": true,
+  "refs": true,
+  "path": "11_learning_based/papers/2025_Cattai_PhysicsInformedTopologicalSignal_en.pdf"
+ },
+ "arxiv:2610.11359": {
+  "status": "ok",
+  "pdf": "https://arxiv.org/pdf/2610.11359v1",
+  "source": "new",
+  "note": "通过：HTTP 200；%PDF 头；pypdf 可解析 13 页、74867 字符；标题匹配 1.00；第一作者姓氏已见；参考文献节已见",
+  "pages": 13,
+  "chars": 74867,
+  "sha256": "f510cc8836e1b459440fb601d2a3bb4d19f888a6b580a5d33bfa9d350d8f8bf5",
+  "bytes": 5682192,
+  "title_match": 1.0,
+  "author_found": true,
+  "refs": true,
+  "path": "11_learning_based/papers/2026_Kojima_UnrolledTimeVaryingGraph_en.pdf"
+ },
+ "arxiv:2505.22175": {
+  "status": "dup_elsewhere",
+  "note": "已由 06 群收录，本群不重复计数"
+ }
+}

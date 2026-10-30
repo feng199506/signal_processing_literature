@@ -1,0 +1,20 @@
+{
+ "status": "verified",
+ "set": "projects",
+ "title": "ssqueezepy synchrosqueezing / CWT library",
+ "files": [
+  {
+   "path": "projects/ssqueezepy_src_en",
+   "url": "https://github.com/OverLordGoldDragon/ssqueezepy",
+   "commit": "adf76ac1930321a6e06d5fa5762dc5549316cf91",
+   "files": 93,
+   "archive_sha256": "1253f3db8e5e485190ee9004f024d890470a5fab7e2fe30f0d49cfb020db51f2",
+   "bytes": 18605874
+  }
+ ],
+ "commit": "adf76ac1930321a6e06d5fa5762dc5549316cf91",
+ "license_files": [
+  "LICENSE"
+ ],
+ "note": "官方仓库快照 commit adf76ac19303：归档 zip 完整性通过，解压 93 个文件（0 个 notebook）；应有文件已见 ['ssqueezepy/', 'LICENSE']；许可证文件 ['LICENSE']；未发现 LFS 指针文件"
+}

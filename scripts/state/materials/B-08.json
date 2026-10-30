@@ -1,0 +1,15 @@
+{
+ "status": "verified",
+ "set": "books",
+ "title": "Bayesian Filtering and Smoothing (2nd ed.)",
+ "files": [
+  {
+   "path": "books/Sarkka_BayesianFilteringSmoothing_2e_en.pdf",
+   "url": "https://users.aalto.fi/~ssarkka/pub/bfs_book_2023_online.pdf",
+   "pages": 436,
+   "sha256": "6b57f19aedb36a539a0a882b3c0c7ef49155ac25d82ee6950fc808b0a60f9c55",
+   "bytes": 11364145
+  }
+ ],
+ "note": "HTTP 200；%PDF；pypdf 可解析 436 页；名称短语已见"
+}

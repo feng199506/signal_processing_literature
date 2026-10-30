@@ -1,0 +1,6 @@
+[
+  {"q": "(\"graph signal processing\" OR \"graph Fourier\" OR \"graph filter\" OR \"graph sampling\")", "subtopic": "GSP"},
+  {"q": "cat:eess.SP AND (spatiotemporal OR \"spatio-temporal\") AND (graph OR sensor OR interpolation)", "subtopic": "ST"},
+  {"q": "(\"sensor network\") AND (sampling OR interpolation OR graph) AND (signal)", "subtopic": "sensor nets"},
+  {"q": "(ti:survey OR ti:review OR ti:tutorial) AND (\"graph signal\" OR \"graph neural\" AND sampling)", "subtopic": "survey"}
+]

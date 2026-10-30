@@ -1,0 +1,239 @@
+{
+ "status": "verified",
+ "set": "books",
+ "title": "The Scientist and Engineer's Guide to Digital Signal Processing (2nd ed.)",
+ "files": [
+  {
+   "path": "books/Smith_ScientistEngineersGuideDSP_1999_en/01_CH1_en.pdf",
+   "url": "https://www.dspguide.com/CH1.PDF",
+   "pages": 10,
+   "sha256": "6c43b0730c3a289a9bb6afb545e7a48c5f6cd6e907c2934031ffbc0867115a09",
+   "bytes": 45397
+  },
+  {
+   "path": "books/Smith_ScientistEngineersGuideDSP_1999_en/02_CH2_en.pdf",
+   "url": "https://www.dspguide.com/CH2.PDF",
+   "pages": 24,
+   "sha256": "93c11ea0e895282d8d32405427fe56f3827a614b5a64171a3e668334a3bcb020",
+   "bytes": 480882
+  },
+  {
+   "path": "books/Smith_ScientistEngineersGuideDSP_1999_en/03_CH3_en.pdf",
+   "url": "https://www.dspguide.com/CH3.PDF",
+   "pages": 32,
+   "sha256": "abab1c0c78027bc47481dc6f69e3035e5dddc3b242e3c3650ed9c8b6e0e84308",
+   "bytes": 568623
+  },
+  {
+   "path": "books/Smith_ScientistEngineersGuideDSP_1999_en/04_CH4_en.pdf",
+   "url": "https://www.dspguide.com/CH4.PDF",
+   "pages": 20,
+   "sha256": "c25d647b3dcf05cac3d7a27b3c7a223a3f30678cb9c186fe8d7e2438f014eef9",
+   "bytes": 142020
+  },
+  {
+   "path": "books/Smith_ScientistEngineersGuideDSP_1999_en/05_CH5_en.pdf",
+   "url": "https://www.dspguide.com/CH5.PDF",
+   "pages": 20,
+   "sha256": "c12e91eff4e861fd1d5e8c125b49b69079d29d18bd204160decb530033aa6bd5",
+   "bytes": 206360
+  },
+  {
+   "path": "books/Smith_ScientistEngineersGuideDSP_1999_en/06_CH6_en.pdf",
+   "url": "https://www.dspguide.com/CH6.PDF",
+   "pages": 16,
+   "sha256": "8979d8b8f18a89556899261ae85c41b295852d67242b5eba9f490fe620620a37",
+   "bytes": 251843
+  },
+  {
+   "path": "books/Smith_ScientistEngineersGuideDSP_1999_en/07_CH7_en.pdf",
+   "url": "https://www.dspguide.com/CH7.PDF",
+   "pages": 18,
+   "sha256": "d8255ac1542dd0ab3784544ad7ddd2356a008797e9983e10792fbbf2a40abe6b",
+   "bytes": 285389
+  },
+  {
+   "path": "books/Smith_ScientistEngineersGuideDSP_1999_en/08_CH8_en.pdf",
+   "url": "https://www.dspguide.com/CH8.PDF",
+   "pages": 28,
+   "sha256": "fdb5f04ef6ace66bbe62307fe73835ee20460b0ee74077c433ab001d5696f244",
+   "bytes": 486957
+  },
+  {
+   "path": "books/Smith_ScientistEngineersGuideDSP_1999_en/09_CH9_en.pdf",
+   "url": "https://www.dspguide.com/CH9.PDF",
+   "pages": 16,
+   "sha256": "ed28dfb4c5f2ab88d6eb0669c83475ca09529937df319563d4ed736e88417ddd",
+   "bytes": 433637
+  },
+  {
+   "path": "books/Smith_ScientistEngineersGuideDSP_1999_en/10_CH10_en.pdf",
+   "url": "https://www.dspguide.com/CH10.PDF",
+   "pages": 24,
+   "sha256": "8b8be3aa3ea1455aa38501a715eab46ac192fe2781e68c7bf20433e33a3b5cad",
+   "bytes": 689134
+  },
+  {
+   "path": "books/Smith_ScientistEngineersGuideDSP_1999_en/11_CH11_en.pdf",
+   "url": "https://www.dspguide.com/CH11.PDF",
+   "pages": 16,
+   "sha256": "5c509ded9f5ec52d741f439c78e8ec82ec78b3dedaa86e520f3abdba4264d40c",
+   "bytes": 589518
+  },
+  {
+   "path": "books/Smith_ScientistEngineersGuideDSP_1999_en/12_CH12_en.pdf",
+   "url": "https://www.dspguide.com/CH12.PDF",
+   "pages": 18,
+   "sha256": "d827161c32989438521ffb52942b65edbbe423cc9ca5cd240f58527efbe4eef6",
+   "bytes": 188724
+  },
+  {
+   "path": "books/Smith_ScientistEngineersGuideDSP_1999_en/13_CH13_en.pdf",
+   "url": "https://www.dspguide.com/CH13.PDF",
+   "pages": 18,
+   "sha256": "cac79fcb25997445c372a9bc605b41080089677a5aec525fb31271ee7c14d71b",
+   "bytes": 370305
+  },
+  {
+   "path": "books/Smith_ScientistEngineersGuideDSP_1999_en/14_CH14_en.pdf",
+   "url": "https://www.dspguide.com/CH14.PDF",
+   "pages": 16,
+   "sha256": "3912f3dc282ddcbe9e9767e379dd197d901c8e1b746251b85cb41298eea9228c",
+   "bytes": 254727
+  },
+  {
+   "path": "books/Smith_ScientistEngineersGuideDSP_1999_en/15_CH15_en.pdf",
+   "url": "https://www.dspguide.com/CH15.PDF",
+   "pages": 8,
+   "sha256": "6e002824d7841e2d4229a7c405629c24a034ed8cc5bbdcb379ba8b3b3a9b0b5d",
+   "bytes": 165860
+  },
+  {
+   "path": "books/Smith_ScientistEngineersGuideDSP_1999_en/16_CH16_en.pdf",
+   "url": "https://www.dspguide.com/CH16.PDF",
+   "pages": 12,
+   "sha256": "1dae53e53d17cfde38679eb5893bc3db4d5005ad68cef1996ca6495cc9f13f09",
+   "bytes": 353357
+  },
+  {
+   "path": "books/Smith_ScientistEngineersGuideDSP_1999_en/17_CH17_en.pdf",
+   "url": "https://www.dspguide.com/CH17.PDF",
+   "pages": 14,
+   "sha256": "dea44b14f334c6946e721f37eb86536941536cac63f30008460f43688e2969fa",
+   "bytes": 372766
+  },
+  {
+   "path": "books/Smith_ScientistEngineersGuideDSP_1999_en/18_CH18_en.pdf",
+   "url": "https://www.dspguide.com/CH18.PDF",
+   "pages": 8,
+   "sha256": "dd8bd4bdaf187ba845ba3faadc7362f8a4c39cd9c5964ab0c21692a357445e44",
+   "bytes": 154984
+  },
+  {
+   "path": "books/Smith_ScientistEngineersGuideDSP_1999_en/19_CH19_en.pdf",
+   "url": "https://www.dspguide.com/CH19.PDF",
+   "pages": 14,
+   "sha256": "af0499ee4be5919e7a27fd1e87f01193875707e50c7d6756d24485bb6e1fce01",
+   "bytes": 362895
+  },
+  {
+   "path": "books/Smith_ScientistEngineersGuideDSP_1999_en/20_CH20_en.pdf",
+   "url": "https://www.dspguide.com/CH20.PDF",
+   "pages": 10,
+   "sha256": "b766b0e9a288ff192cec097f99cb5bffd6c56b227593e8bd596d77348acb0ee8",
+   "bytes": 244431
+  },
+  {
+   "path": "books/Smith_ScientistEngineersGuideDSP_1999_en/21_CH21_en.pdf",
+   "url": "https://www.dspguide.com/CH21.PDF",
+   "pages": 8,
+   "sha256": "f09aa4522d618e379f9d59f0f6aab35d7dbed7edddda3d3be324b49c75426380",
+   "bytes": 166552
+  },
+  {
+   "path": "books/Smith_ScientistEngineersGuideDSP_1999_en/22_CH22_en.pdf",
+   "url": "https://www.dspguide.com/CH22.PDF",
+   "pages": 22,
+   "sha256": "5c2e7c4a3e9fac906cabdb012015dd5d3d0c0db21f7c393e6b666d4fc255969f",
+   "bytes": 362336
+  },
+  {
+   "path": "books/Smith_ScientistEngineersGuideDSP_1999_en/23_CH23_en.pdf",
+   "url": "https://www.dspguide.com/CH23.PDF",
+   "pages": 24,
+   "sha256": "13c6137e0d2b7e38d6cbfc1b6cc79fbd915479a2a1acd95493d4b34e1163dc1f",
+   "bytes": 694437
+  },
+  {
+   "path": "books/Smith_ScientistEngineersGuideDSP_1999_en/24_CH24_en.pdf",
+   "url": "https://www.dspguide.com/CH24.PDF",
+   "pages": 26,
+   "sha256": "83c2fc217f5225e2a4f75a7d07198db0e214abac10eefbe8c317ce58e60f9e35",
+   "bytes": 2113231
+  },
+  {
+   "path": "books/Smith_ScientistEngineersGuideDSP_1999_en/25_CH25_en.pdf",
+   "url": "https://www.dspguide.com/CH25.PDF",
+   "pages": 28,
+   "sha256": "af79eb1ec743c262973b8c2e5e1136182a7ea74d8ec39bdd3a8992e4097315ea",
+   "bytes": 688869
+  },
+  {
+   "path": "books/Smith_ScientistEngineersGuideDSP_1999_en/26_CH26_en.pdf",
+   "url": "https://www.dspguide.com/CH26.PDF",
+   "pages": 30,
+   "sha256": "9ba5d8f5fe00d9a8034fc936ac5ae50dd82faddf160d73d565cda1ce9aad991e",
+   "bytes": 485729
+  },
+  {
+   "path": "books/Smith_ScientistEngineersGuideDSP_1999_en/27_CH27_en.pdf",
+   "url": "https://www.dspguide.com/CH27.PDF",
+   "pages": 22,
+   "sha256": "16dae0f0b30f71545bf35ad5c4567379fcb31a8a533439f8a51a52ba42cd1858",
+   "bytes": 394218
+  },
+  {
+   "path": "books/Smith_ScientistEngineersGuideDSP_1999_en/28_CH28_en.pdf",
+   "url": "https://www.dspguide.com/CH28.PDF",
+   "pages": 32,
+   "sha256": "c1fcb824824126cbeed16738da087d1748f60ca074ed47c55dfb559c3845bfd0",
+   "bytes": 430027
+  },
+  {
+   "path": "books/Smith_ScientistEngineersGuideDSP_1999_en/29_CH29_en.pdf",
+   "url": "https://www.dspguide.com/CH29.PDF",
+   "pages": 16,
+   "sha256": "8bf1d37fafcc8e1fcff964e1003c61606eb944ec09f615704b3228175663509d",
+   "bytes": 1141445
+  },
+  {
+   "path": "books/Smith_ScientistEngineersGuideDSP_1999_en/30_CH30_en.pdf",
+   "url": "https://www.dspguide.com/CH30.PDF",
+   "pages": 16,
+   "sha256": "4aecfb79adbe7f89e149a5744f80cbec47dab1d16fc5c6b5ae47527021160102",
+   "bytes": 349268
+  },
+  {
+   "path": "books/Smith_ScientistEngineersGuideDSP_1999_en/31_CH31_en.pdf",
+   "url": "https://www.dspguide.com/CH31.PDF",
+   "pages": 14,
+   "sha256": "e6855873487eab202b4215f5f851ee5ee78563a05225e6f1035e133f90a4f23c",
+   "bytes": 397824
+  },
+  {
+   "path": "books/Smith_ScientistEngineersGuideDSP_1999_en/32_CH32_en.pdf",
+   "url": "https://www.dspguide.com/CH32.PDF",
+   "pages": 24,
+   "sha256": "d7d7aa214c19aa586439b8ad07b6bb677e476a466e73cdc401fd5bf8d132a6d7",
+   "bytes": 1619436
+  },
+  {
+   "path": "books/Smith_ScientistEngineersGuideDSP_1999_en/33_CH33_en.pdf",
+   "url": "https://www.dspguide.com/CH33.PDF",
+   "pages": 26,
+   "sha256": "420a9f94f92ffbceceacb1267384c59b1127524dd25d62dbe59637a65d010c42",
+   "bytes": 302493
+  }
+ ],
+ "note": "33 个 PDF 全部 HTTP 200 且可解析，合计 630 页"
+}

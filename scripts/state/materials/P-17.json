@@ -1,0 +1,20 @@
+{
+ "status": "verified",
+ "set": "projects",
+ "title": "PyEMD empirical mode decomposition",
+ "files": [
+  {
+   "path": "projects/PyEMD_src_en",
+   "url": "https://github.com/laszukdawid/PyEMD",
+   "commit": "e8ea44f6d577db3678de97210ae6bd81ffcb95a1",
+   "files": 88,
+   "archive_sha256": "03d6d50cb170d85129fc885d447d81edcc1063657ca0c11bb7d447f3e96b1ab0",
+   "bytes": 960174
+  }
+ ],
+ "commit": "e8ea44f6d577db3678de97210ae6bd81ffcb95a1",
+ "license_files": [
+  "LICENSE.md"
+ ],
+ "note": "官方仓库快照 commit e8ea44f6d577：归档 zip 完整性通过，解压 88 个文件（0 个 notebook）；应有文件已见 ['PyEMD/', 'LICENSE']；许可证文件 ['LICENSE.md']；未发现 LFS 指针文件"
+}

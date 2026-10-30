@@ -1,0 +1,20 @@
+{
+ "status": "verified",
+ "set": "projects",
+ "title": "Asteroid source separation toolkit snapshot",
+ "files": [
+  {
+   "path": "projects/asteroid_src_en",
+   "url": "https://github.com/asteroid-team/asteroid",
+   "commit": "c15708a04d3d28e9a1cd50553c456299dbc6d236",
+   "files": 483,
+   "archive_sha256": "fa648dd8f6605a0e930c61e0eecb4026a07465dfc1a435db71060dab4772044d",
+   "bytes": 2455235
+  }
+ ],
+ "commit": "c15708a04d3d28e9a1cd50553c456299dbc6d236",
+ "license_files": [
+  "LICENSE"
+ ],
+ "note": "官方仓库快照 commit c15708a04d3d：归档 zip 完整性通过，解压 483 个文件（5 个 notebook）；应有文件已见 ['asteroid/', 'LICENSE']；许可证文件 ['LICENSE']；未发现 LFS 指针文件"
+}

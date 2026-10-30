@@ -1,0 +1,15 @@
+{
+ "status": "verified",
+ "set": "books",
+ "title": "Toeplitz and Circulant Matrices: A Review",
+ "files": [
+  {
+   "path": "books/Gray_ToeplitzCirculantMatrices_en.pdf",
+   "url": "https://ee.stanford.edu/~gray/toeplitz.pdf",
+   "pages": 98,
+   "sha256": "21e62dd4e75419e0ad7c6402827d765a20b1ca4ccdc319cee35f6b12c49e20ca",
+   "bytes": 466426
+  }
+ ],
+ "note": "HTTP 200；%PDF；pypdf 可解析 98 页；名称短语已见"
+}

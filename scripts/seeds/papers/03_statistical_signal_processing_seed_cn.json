@@ -1,0 +1,93 @@
+[
+ {
+  "arxiv": "2303.11908",
+  "subtopic": "PSD",
+  "type": "原始研究论文",
+  "reason": "经典谱估计器的非渐近界。",
+  "summary": "Spectrum estimation is a fundamental methodology in the analysis of time-series data, with applications including medicine, speech analysis, and control design. The asymptotic theory of spectrum estimation is well-understood, but the theory is limited when the number of samples is fixed and finite. This paper gives non-asymptotic error bounds for a broad class of spectral estimators, both pointwis",
+  "summary_basis": "arXiv 摘要（检索日）",
+  "level": "硕士/博士",
+  "difficulty": "中级"
+ },
+ {
+  "arxiv": "2603.20624",
+  "subtopic": "PSD",
+  "type": "原始研究论文",
+  "reason": "互相关周期图功率谱估计。",
+  "summary": "We present a statistical analysis of a variant of the periodogram method that forms power spectral density estimates by cross-correlating the discrete Fourier transforms of adjacent time windows. The proposed estimator is closely related to cross-power spectral methods and to a technique introduced by Nelson, which has been observed empirically to improve detection of sinusoidal components in nois",
+  "summary_basis": "arXiv 摘要（检索日）",
+  "level": "硕士/博士",
+  "difficulty": "中级"
+ },
+ {
+  "arxiv": "2211.02635",
+  "subtopic": "PSD",
+  "type": "原始研究论文",
+  "reason": "进化功率谱密度估计。",
+  "summary": "Two popular spectral-based approaches for estimating the evolutionary power spectral density (EPSD) function from the samples of the evolutionary process are based on the short-time Fourier transform (STFT) and the continuous wavelet transform. Both rely on the concept of slowly varying modulation or EPSD function, although the quantification of the effect of the 'slow' variation in the estimated ",
+  "summary_basis": "arXiv 摘要（检索日）",
+  "level": "硕士/博士",
+  "difficulty": "中级"
+ },
+ {
+  "arxiv": "2204.07881",
+  "subtopic": "detection",
+  "type": "原始研究论文",
+  "reason": "Neyman-Pearson 检测器族。",
+  "summary": "We derive a detector that optimizes the target detection performance of any single-input single-output noise radar satisfying the following properties: it transmits Gaussian noise, it retains an internal reference signal for matched filtering, all external noise is additive white Gaussian noise, and all signals are measured using heterodyne receivers. This class of radars, which we call noise-type",
+  "summary_basis": "arXiv 摘要（检索日）",
+  "level": "硕士/博士",
+  "difficulty": "中级"
+ },
+ {
+  "arxiv": "2409.18377",
+  "subtopic": "detection",
+  "type": "原始研究论文",
+  "reason": "黎曼几何矩阵 CFAR。",
+  "summary": "Essential characteristics of signal data can be captured by the autocovariance matrix, which, in the stationary scenarios, is Toeplitz Hermitian positive definite (HPD). In this paper, several well-known Riemannian geometric structures of HPD matrix manifolds are applied to signal detection, including the affine invariant Riemannian metric, the log-Euclidean metric, and the Bures--Wasserstein (BW)",
+  "summary_basis": "arXiv 摘要（检索日）",
+  "level": "硕士/博士",
+  "difficulty": "中级"
+ },
+ {
+  "arxiv": "2304.13928",
+  "subtopic": "estimation",
+  "type": "原始研究论文",
+  "reason": "OTFS/OFDM 的 Cramér-Rao 界。",
+  "summary": "The orthogonal time frequency space (OTFS) modulation as a promising signal representation attracts growingcinterest for integrated sensing and communication (ISAC), yet its merits over orthogonal frequency division multiplexing (OFDM) remain controversial. This paper devotes to a comprehensive comparison of OTFS and OFDM for sensing from the perspective of Cramer-Rao lower bounds (CRLB) analysis.",
+  "summary_basis": "arXiv 摘要（检索日）",
+  "level": "硕士/博士",
+  "difficulty": "中级"
+ },
+ {
+  "arxiv": "2312.14507",
+  "subtopic": "estimation",
+  "type": "原始研究论文",
+  "reason": "可微 DSP 谐波参数估计。",
+  "summary": "In neural audio signal processing, pitch conditioning has been used to enhance the performance of synthesizers. However, jointly training pitch estimators and synthesizers is a challenge when using standard audio-to-audio reconstruction loss, leading to reliance on external pitch trackers. To address this issue, we propose using a spectral loss function inspired by optimal transportation theory th",
+  "summary_basis": "arXiv 摘要（检索日）",
+  "level": "硕士/博士",
+  "difficulty": "中级"
+ },
+ {
+  "arxiv": "2403.18445",
+  "subtopic": "estimation",
+  "type": "原始研究论文",
+  "reason": "同步信号处理的渐近分析。",
+  "summary": "This paper extends various theoretical results from stationary data processing to cyclostationary (CS) processes under a unified framework. We first derive their asymptotic eigenbasis, which provides a link between their Fourier and Karhunen-Loève (KL) expansions, through a unitary transformation dictated by the cyclic spectrum. By exploiting this connection and the optimalities offered by the KL ",
+  "summary_basis": "arXiv 摘要（检索日）",
+  "level": "硕士/博士",
+  "difficulty": "中级"
+ },
+ {
+  "arxiv": "2302.08711",
+  "subtopic": "estimation",
+  "type": "原始研究论文",
+  "reason": "零填充 OFDM 最大似然时间同步。",
+  "reserve": true,
+  "summary": "Existing Orthogonal Frequency-Division Multiplexing (OFDM) variants based on cyclic prefix (CP) allow for efficient time synchronization, but suffer from lower power efficiency compared to zero-padded (ZP)-OFDM. Because of its power efficiency, ZP-OFDM is considered as an appealing solution for the emerging low-power wireless systems. However, in the absence of CP, time synchronization in ZP-OFDM ",
+  "summary_basis": "arXiv 摘要（检索日）",
+  "level": "硕士/博士",
+  "difficulty": "中级"
+ }
+]

@@ -1,0 +1,82 @@
+[
+ {
+  "arxiv": "2508.11675",
+  "subtopic": "survey",
+  "type": "学术教程",
+  "reason": "DOA 估计经典与现代方法教程综述（44 页）。",
+  "summary": "Direction of arrival (DOA) estimation is a fundamental problem in array signal processing with applications spanning radar, sonar, wireless communications, and acoustic signal processing. This tutorial survey provides a comprehensive introduction to classical and modern DOA estimation methods, specifically designed for students and researchers new to the field. We focus on narrowband signal proces",
+  "summary_basis": "arXiv 摘要（检索日）",
+  "level": "硕士/博士",
+  "difficulty": "中级"
+ },
+ {
+  "arxiv": "2501.02746",
+  "subtopic": "DOA",
+  "type": "原始研究论文",
+  "reason": "IEEE TSP：ESPRIT DoA 的大维分析与修正。",
+  "summary": "In this paper, we perform asymptotic analyses of the widely used ESPRIT direction-of-arrival (DoA) estimator for large arrays, where the array size $N$ and the number of snapshots $T$ grow to infinity at the same pace. In this large-dimensional regime, the sample covariance matrix (SCM) is known to be a poor eigenspectral estimator of the population covariance. We show that the classical ESPRIT al",
+  "summary_basis": "arXiv 摘要（检索日）",
+  "level": "硕士/博士",
+  "difficulty": "中级"
+ },
+ {
+  "arxiv": "2210.15012",
+  "subtopic": "survey",
+  "type": "综述",
+  "reason": "阵列信号处理又三个十年：优化与结构。",
+  "summary": "The signal processing community currently witnesses the emergence of sensor array processing and Direction-of-Arrival (DoA) estimation in various modern applications, such as automotive radar, mobile user and millimeter wave indoor localization, drone surveillance, as well as in new paradigms, such as joint sensing and communication in future wireless systems. This trend is further enhanced by tec",
+  "summary_basis": "arXiv 摘要（检索日）",
+  "level": "硕士/博士",
+  "difficulty": "中级"
+ },
+ {
+  "arxiv": "2201.03457",
+  "subtopic": "DOA",
+  "type": "原始研究论文",
+  "reason": "ESPRIT 与空间平滑 ESPRIT 的非渐近性能。",
+  "summary": "This paper is concerned with the problem of frequency estimation from multiple-snapshot data. It is well-known that ESPRIT (and spatial-smoothing ESPRIT in presence of coherent sources or given limited snapshots) can locate the true frequencies if either the number of snapshots or the signal-to-noise ratio (SNR) approaches infinity. In this paper, we analyze the nonasymptotic performance of ESPRIT",
+  "summary_basis": "arXiv 摘要（检索日）",
+  "level": "硕士/博士",
+  "difficulty": "中级"
+ },
+ {
+  "arxiv": "2411.15144",
+  "subtopic": "DOA",
+  "type": "原始研究论文",
+  "reason": "未标定阵列上物理参数化可微 MUSIC。",
+  "summary": "Direction of arrival (DoA) estimation is a common sensing problem in radar, sonar, audio, and wireless communication systems. It has gained renewed importance with the advent of the integrated sensing and communication paradigm. To fully exploit the potential of such sensing systems, it is crucial to take into account potential hardware impairments that can negatively impact the obtained performan",
+  "summary_basis": "arXiv 摘要（检索日）",
+  "level": "硕士/博士",
+  "difficulty": "中级"
+ },
+ {
+  "arxiv": "2502.05016",
+  "subtopic": "DOA",
+  "type": "原始研究论文",
+  "reason": "模型失配对 MUSIC 的影响：近场与远场。",
+  "summary": "There has been substantial work on developing variants of the multiple signal classification (MUSIC) algorithms that take advantage of the information present in the near-field propagation regime. However, it is not always easy to determine the correct propagation regime, which opens the possibility of incorrectly applying simpler algorithms (meant for far-field) in the near-field regime. Inspired",
+  "summary_basis": "arXiv 摘要（检索日）",
+  "level": "硕士/博士",
+  "difficulty": "中级"
+ },
+ {
+  "arxiv": "2510.14802",
+  "subtopic": "arrays",
+  "type": "原始研究论文",
+  "reason": "天线数线性复杂度的可扩展 MVDR。",
+  "summary": "The Minimum Variance Distortionless Response (MVDR) beamforming technique is widely applied in array systems to mitigate interference. However, applying MVDR to large arrays is computationally challenging; its computational complexity scales cubically with the number of antenna elements. In this paper, we introduce a scalable MVDR beamforming method tailored for massive arrays. Our approach, which",
+  "summary_basis": "arXiv 摘要（检索日）",
+  "level": "硕士/博士",
+  "difficulty": "中级"
+ },
+ {
+  "arxiv": "2306.08514",
+  "subtopic": "arrays",
+  "type": "原始研究论文",
+  "reason": "TASLP：低秩稀疏插值的 SRP 波束功率图。",
+  "summary": "The steered response power (SRP) is a popular approach to compute a map of the acoustic scene, typically used for acoustic source localization. The SRP map is obtained as the frequency-weighted output power of a beamformer steered towards a grid of candidate locations. Due to the exhaustive search over a fine grid at all frequency bins, conventional frequency domain-based SRP (conv. FD-SRP) result",
+  "summary_basis": "arXiv 摘要（检索日）",
+  "level": "硕士/博士",
+  "difficulty": "中级"
+ }
+]

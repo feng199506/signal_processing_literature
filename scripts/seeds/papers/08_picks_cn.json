@@ -1,0 +1,47 @@
+[
+ {
+  "arxiv": "1211.0053",
+  "subtopic": "GSP",
+  "type": "综述",
+  "classic_reason": "Shuman 等 IEEE SPM，图信号处理兴起综述。",
+  "reason": "图 Fourier 与图滤波标准入口。"
+ },
+ {
+  "arxiv": "1712.00468",
+  "subtopic": "GSP",
+  "type": "学术教程",
+  "classic_reason": "Ortega 等 GSP 导论。",
+  "reason": "图滤波、挑战与应用。"
+ },
+ {
+  "arxiv": "2508.21415",
+  "subtopic": "GSP",
+  "type": "原始研究论文",
+  "reason": "有限时间-顶点图信号的子集随机采样与重建。"
+ },
+ {
+  "arxiv": "2209.07970",
+  "subtopic": "GSP",
+  "type": "原始研究论文",
+  "reason": "IEEE TSP：DAG 上的因果 Fourier。"
+ },
+ {
+  "arxiv": "2307.00336",
+  "subtopic": "GSP",
+  "type": "原始研究论文",
+  "reason": "图信号重建的样本量。"
+ },
+ {
+  "arxiv": "2206.00382",
+  "subtopic": "GSP",
+  "type": "原始研究论文",
+  "reason": "随机先验下的图信号采样。"
+ },
+ {
+  "arxiv": "2406.16816",
+  "subtopic": "ST",
+  "type": "原始研究论文",
+  "reason": "图扩散场的随机时空采样与重建。",
+  "reserve": true
+ }
+]
